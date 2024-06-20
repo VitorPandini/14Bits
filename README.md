@@ -14,11 +14,11 @@ Além de sua significativa contribuição acadêmica, nosso projeto se destaca p
 A invenção do 14-Bis por Santos Dumont foi um marco que demonstrou o potencial do Brasil em criar tecnologias inovadoras. Inspirados por essa tradição, escolhemos o nome "14-bits" para nosso projeto. No contexto digital, um "bit" é a menor unidade de informação. Ao usarmos "14-bits", simbolizamos a junção de tecnologia e história, refletindo a complexidade e a riqueza das inovações brasileiras em T.I. Cada bit representa uma peça do grande quebra-cabeça que é a tecnologia, e nosso projeto irá juntar essas peças para formar uma imagem completa e interativa do legado tecnológico do Brasil.
 
 ## 👨‍💻 Integrantes do projeto
-- Adler Neto
+- [Adler Neto](https://github.com/adler-neto)
 - Allef Souza
-- Priscila Souza
-- Thamiris Lima
-- Vitor da Silva
+- [Priscila Souza](https://github.com/priscilahilario)
+- [Thamiris Lima](https://github.com/thamirislimadc)
+- [Vitor Pandini](https://github.com/VitorPandini)
 
 ## 🔗 Links úteis
 - [Talento Cloud Pro](https://pages.prozeducacao.com.br/lp-proz-tecnologia-talento-cloud)
