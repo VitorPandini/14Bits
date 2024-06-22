@@ -1,4 +1,5 @@
-![Banner-01](https://github.com/VitorPandini/14Bits/assets/108374424/e836fcdf-dd79-4413-a866-d2a70babcf1c)
+![Banner-01](https://github.com/VitorPandini/14Bits/assets/108374424/a937af1d-6ce5-47a4-a7a2-6aea7347d710)
+
 
 # 14-bits | Mapa interativo de curiosidades tecnológicas do Brasil
 
@@ -15,7 +16,7 @@ Além de sua significativa contribuição acadêmica, nosso projeto se destaca p
 ## 📢 14-bits: a escolha do nome
 A invenção do 14-Bis por Santos Dumont foi um marco que demonstrou o potencial do Brasil em criar tecnologias inovadoras. Inspirados por essa tradição, escolhemos o nome "14-bits" para nosso projeto. No contexto digital, um "bit" é a menor unidade de informação. Ao usarmos "14-bits", simbolizamos a junção de tecnologia e história, refletindo a complexidade e a riqueza das inovações brasileiras em T.I. Cada bit representa uma peça do grande quebra-cabeça que é a tecnologia, e nosso projeto irá juntar essas peças para formar uma imagem completa e interativa do legado tecnológico do Brasil.
 
-![Banner-02](https://github.com/VitorPandini/14Bits/assets/108374424/b0f1f249-cd48-4f9b-bfa7-4f06ebcfeee5)
+![Banner-02](https://github.com/VitorPandini/14Bits/assets/108374424/74422610-633f-419b-afdf-50046a2fbac3)
 
 ## 👨‍💻 Integrantes do projeto
 - [Adler Neto](https://github.com/adler-neto)
