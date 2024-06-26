@@ -9,10 +9,11 @@ Time: Allef, Adler, Emily, Priscila, Thamiris e Vitor
 										                    	      
  	
 ## Sprint 01: 19.06.24 - 26.06.24
------------------------------------------------------------------------------------------------------------------------
+
 Projeto: 14-Bits - Mapa interativo de curiosidades tecnológicas do Brasil
 
 Reunião 01: 	25.06.24
+
 Participantes: Adler, Allef, Priscila, Thamiris, Vitor e Emily
 
 Ideação do Projeto:
