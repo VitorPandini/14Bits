@@ -1,13 +1,14 @@
-#Relatórios das Sprints - Grupo 14-Bits
+# Relatórios das Sprints - Grupo 14-Bits
 
-Proz Educação							              	Time:	Vitor
-Talento Cloud Pro - Turma 28							      Allef
-Projeto Integrador									            Thamiris
-										                          	Priscila
-										                          	Adler
-										                    	      Emily
+Proz Educação							              	
+Talento Cloud Pro -
+Turma 28							      
+Projeto Integrador									            
+Time: Allef, Adler, Emily, Priscila, Thamiris e Vitor										                          	
+										                          	
+										                    	      
  	
-Sprint 01: 19.06.24 - 26.06.24
+## Sprint 01: 19.06.24 - 26.06.24
 -----------------------------------------------------------------------------------------------------------------------
 Projeto: 14-Bits - Mapa interativo de curiosidades tecnológicas do Brasil
 
