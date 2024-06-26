@@ -1,6 +1,6 @@
 add
 
-## TELA_01![TELA_01](https://github.com/VitorPandini/14Bits/assets/107660245/246e97a2-bc23-4c1c-aa09-519f4584271a)
+## TELA_01![home](https://github.com/VitorPandini/14Bits/assets/107660245/49c57291-d106-4344-9f99-b8c3b7c95795)
 
 ## TELA_02![TELA_02](https://github.com/VitorPandini/14Bits/assets/107660245/373ca5c4-7748-4cb9-861c-5956cac8ec80)
 
