@@ -32,4 +32,4 @@ Decidimos focar em um dos vários caminhos possíveis para o site, desenvolvendo
 Criamos um grupo no WhatsApp para facilitar a comunicação entre os membros, o que tem sido fundamental para o desenvolvimento colaborativo das ideias. Adicionalmente, estamos centralizando todas as informações relevantes no repositório do projeto, conforme documentado no Readme.md.
 
 ### Repositório do Projeto:
-Todas as atualizações e informações do projeto podem ser encontradas no nosso repositório GitHub. Segue o link: GitHub - 14Bits
+Todas as atualizações e informações do projeto podem ser encontradas no nosso repositório GitHub. Segue o link: [GitHub - 14Bits](https://github.com/VitorPandini/14Bits)
