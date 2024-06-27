@@ -21,10 +21,11 @@ A invenção do 14-Bis por Santos Dumont foi um marco que demonstrou o potencial
 ## 👨‍💻 Integrantes do projeto
 - [Adler Neto](https://github.com/adler-neto)
 - [Allef Souza](https://github.com/allef-eng)
+- [Emily Matias](https://github.com/matiasemily)
 - [Priscila Hilario](https://github.com/priscilahilario)
 - [Thamiris Lima](https://github.com/thamirislimadc)
 - [Vitor Pandini](https://github.com/VitorPandini)
-- [Emily Matias](https://github.com/matiasemily)
 
 ## 🔗 Links úteis
 - [Talento Cloud Pro](https://pages.prozeducacao.com.br/lp-proz-tecnologia-talento-cloud)
+- [Paleta da Identidade Visual](https://coolors.co/ffffff-ff8800-ffd23f-75c200-00bad6-003315)
