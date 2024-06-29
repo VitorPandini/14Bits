@@ -45,10 +45,12 @@ Atualmente, estamos separando principalmente em:
 Se você tem uma alteração no código mas não tem certeza quer que vá para `developer` ainda, pode criar uma branch para você. Temos passo a passo abaixo!
 
 --------------------------
-((((((((colocar instruções de como criar branch))))))))
---------------------------
+### E agora como criar branches ?
+- Parar criar uma nova branche, utilize o comando `git branch nome-da-branch`.
+- Para alterar a branche, utilize `git checkout nome-da-branch` ou nas versões mais atuais utilize `git switch nome-da-branch`.
+- Para criar e alterar para a nova branch utilize, em um único comando`git checkout -b nome-da-branch`
 
-
+  
 ## Boas práticas
 ### Nomes de branch descritivos e concisos
 O nome da branch deve descrever claramente o propósito da branch.
@@ -72,9 +74,3 @@ Use a Estrutura Padrão:
 - Escreva no imperativo: Use verbos no imperativo para descrever o que o commit faz.
 
 **Exemplo:** "Adiciona validação ao formulário de login", "Corrige erro de autenticação".
-
-### Nomes de arquivo
-
---------------------------
-((((((((((((((colocar instruções sobre boas práticas de nome de arquivo))))))))))))))
---------------------------
