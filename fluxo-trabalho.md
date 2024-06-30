@@ -19,9 +19,9 @@ Certifique-se de que seu repositório local está com as atualizações mais rec
 - Migre para a branch `developer` com `git checkout developer`
 
 ### Para alterações em geral realize esse fluxo
-- Após realizar as alterações, faça um `git add .`
-- Em seguida, ` git commit -m "sua mensagem de commit"`
-- Após isso, execute ` git push -u origin developer`
+- Após realizar as alterações, faça um `git add .` que vai preparar as alterações de todos arquivos editados naquela pasta para serem commitadas.
+- Em seguida, ` git commit -m "sua mensagem de commit"` que faz um registro do que foi alterado, com sua mensagem explicando a alteração.
+- Após isso, execute ` git push -u origin developer` que vai enviar sua alteração para o repositório remoto na internet, tornando disponível a outras pessoas do repositório.
 
 
 ## O que é um ambiente de trabalho?
