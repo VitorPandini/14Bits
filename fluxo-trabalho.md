@@ -74,6 +74,3 @@ Use a Estrutura Padrão:
 - Escreva no imperativo: Use verbos no imperativo para descrever o que o commit faz.
 
 **Exemplo:** "Adiciona validação ao formulário de login", "Corrige erro de autenticação".
-
-
-Alteração de exemplo
