@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre o site | 14-Bits</title>
 </head>
+    
 <body>
     <header>
         
@@ -20,9 +21,10 @@
             <a href="sobre.html">Sobre o Site</a>
             <a href="faq.html">FAQ</a>
         </nav>
+        
     </header>
+    
     <main>
-
 
         <!-- Explanação sobre o site e o projeto -->
         <h1>Sobre o site</h1> 
@@ -34,11 +36,9 @@
         </article>
         <section>
 
-
             <!-- Informações sobre os desenvolvedores do projeto -->
             <h2>Sobre os desenvolvedores</h2>
             <p>Conheça os desenvolvedores que elaboraram este projeto.</p>
-
 
             <!-- Grid com informações sobre cada desenvolvedor -->
             <div id="desenvolvedores-grid">
@@ -98,20 +98,31 @@
                 </div>
 
             </div>
+            
         </section>
 
-        <!-- Formulário de Contato -->
         <section>
+            
+            <!-- Formulário de Contato -->
             <h2>Contato</h2>
             <form action="#">
+                <div class="formulario">
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="formulario">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
+                </div>
+                <div class="formulario">
                     <label for="mensagem">Mensagem:</label>
                     <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+                <div class="formulario-botao">
                     <button type="submit">Enviar</button>
+                </div>
             </form>
+            
         </section>
         
         <section>
@@ -119,18 +130,21 @@
             <!-- Box com CTA para o repositório -->
             <div class="link-container">
                 <div class="repositorio">
-                    <h4>Repositório do Projeto</h4>
+                    <h2>Repositório do Projeto</h2>
                     <p>Confira o projeto no GitHub e sinta-se à vontade para contribuir.</p>
                     <button><a href="https://github.com/VitorPandini/14Bits/">Repositório 14-Bits</a></button>
                 </div>
             </div>
 
         </section>
+        
     </main>
+    
 </body>
 
 <!-- Rodapé simples -->
 <footer>
     <p>&copy; 2024 14Bits. Todos os direitos reservados</p>
 </footer>
+    
 </html>
