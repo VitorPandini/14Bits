@@ -1,11 +1,34 @@
+/* Root */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Header */
+
+
+/* Menu de navegação */
+
+
+/* Título H1 */
+
+
+/* Sobre o projeto */
+
+
+/* Sobre os desenvolvedores */
+
 #desenvolvedoresGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
+/* Contate-nos */
+
+
+/* Repositório */
+
+
+/* Footer */
