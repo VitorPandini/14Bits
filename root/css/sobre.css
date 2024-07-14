@@ -47,17 +47,6 @@ nav a:hover {
     color: var(--amarelo); 
 }
 
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    nav {
-        padding: 30px 10%; /* Ajuste de padding para telas de tablets */
-    }
-    
-    nav a {
-        font-size: 18px; /* Ajuste de tamanho de fonte maior para tablets */
-    }
-}
-
 /* Media query para smartphones */
 @media (max-width: 768px) {
     nav {
@@ -457,11 +446,175 @@ h1 {
 
 /*-----------------------------------------------------------------------------------*/
 /* Contate-nos */
+.contatenos {
+    padding: 60px 10% 20px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    
+}
 
+.contato01 {
+    flex: 1;
+}
 
+.contato01 h2 {
+    color: var(--verde-escuro);
+    font-size: 30px;
+    font-family: 'montserrat', sans-serif;
+    padding: 20px 0;
+}
+
+.contato01 p {
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 30px;
+    text-align: justify;
+    font-family: 'roboto', sans-serif;
+}
+
+.contato01 img {
+    width: 64px; 
+    height: auto;
+    padding: 10px 20px 0 0; 
+}
+
+/* Formulário */
+.contato02 {
+    flex: 1;
+}
+
+.contato02 form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contato02 input[type="text"], input[type="email"], textarea {
+    padding: 5px;
+    font-size: 16px;
+    border: 3px solid var(--verde);
+    width: 100%;
+    height: auto;
+    outline: none;
+}
+
+.contato02 label {
+    font-size: 18px;
+    font-family: 'roboto', sans-serif;
+}
+
+.contato02 button {
+    font-family: "montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: var(--laranja);
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+/*-----------------------------------------------------------------------------------*/
 /* Repositório */
+.repositorio {
+    flex: 1;
+    flex-wrap: wrap;
+    margin: 40px 10%;
+    display: flex;
+    gap: 50px;
+    background-color: var(--verde);
+    padding: 1%;
+    justify-content: center;
+    text-align: center;
+}
 
+.repositorio h2 {
+    flex: 1;
+    flex-wrap: wrap;
+    color: var(--verde-escuro);
+    font-size: 30px;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 700;
+    padding: 15px;
+}
 
+.repositorio p {
+    flex: 1;
+    flex-wrap: wrap;
+    color: var(--verde-escuro);
+    font-size: 18px;
+    font-family: 'roboto', sans-serif;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: justify;
+    padding: 15px;
+}
+
+.repositorio button {
+    flex: 1;
+    flex-wrap: wrap;
+    font-family: "montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: var(--laranja);
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.repositorio button a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+    .repositorio {
+        gap: 50px;
+    }
+
+    .repositorio h2, .repositorio p, .repositorio button {
+        flex: 1 1 45%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .repositorio {
+        gap: 25px;
+        flex-direction: column; 
+    }
+
+    .repositorio h2, .repositorio p, .repositorio button {
+        flex: 1 1 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .repositorio {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .repositorio h2 {
+        font-size: 24px; 
+    }
+
+    .repositorio p {
+        font-size: 16px; 
+    }
+
+    .repositorio button {
+        font-size: 18px; 
+        padding: 10px; 
+    }
+}
+
+/*-----------------------------------------------------------------------------------*/
 /* Footer */
 footer {
     background-color: var(--verde-escuro);
