@@ -47,6 +47,17 @@ nav a:hover {
     color: var(--amarelo); 
 }
 
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    nav {
+        padding: 30px 10%; /* Ajuste de padding para telas de tablets */
+    }
+    
+    nav a {
+        font-size: 18px; /* Ajuste de tamanho de fonte maior para tablets */
+    }
+}
+
 /* Media query para smartphones */
 @media (max-width: 768px) {
     nav {
@@ -199,6 +210,7 @@ h1 {
     font-family: 'roboto', sans-serif;
     color: black;
     font-size: 16px;
+    padding-top: 10px;
 }
 
 /* ------------------- Desenvolvedor 02 ------------------- */
@@ -227,6 +239,7 @@ h1 {
     font-family: 'roboto', sans-serif;
     color: black;
     font-size: 16px;
+    padding-top: 10px;
 }
 
 /* ------------------- Desenvolvedor 03 ------------------- */
@@ -255,6 +268,7 @@ h1 {
     font-family: 'roboto', sans-serif;
     color: black;
     font-size: 16px;
+    padding-top: 10px;
 }
 
 /* ------------------- Desenvolvedor 04 ------------------- */
@@ -283,6 +297,7 @@ h1 {
     font-family: 'roboto', sans-serif;
     color: black;
     font-size: 16px;
+    padding-top: 10px;
 }
 
 /* ------------------- Desenvolvedor 05 ------------------- */
@@ -311,6 +326,7 @@ h1 {
     font-family: 'roboto', sans-serif;
     color: black;
     font-size: 16px;
+    padding-top: 10px;
 }
 
 /* ------------------- Desenvolvedor 06 ------------------- */
@@ -339,6 +355,7 @@ h1 {
     font-family: 'roboto', sans-serif;
     color: black;
     font-size: 16px;
+    padding-top: 10px;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -386,6 +403,56 @@ h1 {
     background-color: #f1f1f1;
     color: black;
     transform: rotateY(180deg); /* Gira o lado de trás em 180 graus */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+    .desenvolvedor01, .desenvolvedor02, .desenvolvedor03, .desenvolvedor04, .desenvolvedor05, .desenvolvedor06 {
+        padding: 15px 5%;
+    }
+
+    .desenvolvedor01 h3, .desenvolvedor02 h3, .desenvolvedor03 h3, .desenvolvedor04 h3, .desenvolvedor05 h3, .desenvolvedor06 h3 {
+        font-size: 16px;
+    }
+
+    .desenvolvedor01 h4, .desenvolvedor02 h4, .desenvolvedor03 h4, .desenvolvedor04 h4, .desenvolvedor05 h4, .desenvolvedor06 h4 {
+        font-size: 14px;
+    }
+
+    .desenvolvedor01 p, .desenvolvedor02 p, .desenvolvedor03 p, .desenvolvedor04 p, .desenvolvedor05 p, .desenvolvedor06 p {
+        font-size: 14px;
+    }
+
+    /* Ajuste de gap para layout de grid ou flexbox */
+    #desenvolvedoresGrid {
+        gap: 20px; /* Ajuste conforme necessário */
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .desenvolvedor01, .desenvolvedor02, .desenvolvedor03, .desenvolvedor04, .desenvolvedor05, .desenvolvedor06 {
+        padding: 10px 2%;
+    }
+
+    .desenvolvedor01 h3, .desenvolvedor02 h3, .desenvolvedor03 h3, .desenvolvedor04 h3, .desenvolvedor05 h3, .desenvolvedor06 h3 {
+        font-size: 14px;
+    }
+
+    .desenvolvedor01 h4, .desenvolvedor02 h4, .desenvolvedor03 h4, .desenvolvedor04 h4, .desenvolvedor05 h4, .desenvolvedor06 h4 {
+        font-size: 12px;
+    }
+
+    .desenvolvedor01 p, .desenvolvedor02 p, .desenvolvedor03 p, .desenvolvedor04 p, .desenvolvedor05 p, .desenvolvedor06 p {
+        font-size: 12px;
+    }
+
+    /* Ajuste de gap para layout de grid ou flexbox */
+    #desenvolvedoresGrid {
+        gap: 10px; /* Ajuste conforme necessário */
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /*-----------------------------------------------------------------------------------*/
