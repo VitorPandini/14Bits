@@ -90,6 +90,7 @@ h1 {
 .sobre p {
     color: var(--branco);
     font-size: 18px;
+    font-weight: normal;
     line-height: 30px;
     text-align: justify;
     font-family: 'roboto', sans-serif;
@@ -98,9 +99,9 @@ h1 {
 }
 
 .sobre img {
-    flex: 1; /* A imagem ocupa todo o espaço disponível */
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
-    height: auto; /* Manter a proporção da imagem */
+    flex: 1; 
+    max-width: 100%; 
+    height: auto; 
 }
 
 .barra-colorida {
@@ -144,52 +145,248 @@ h1 {
 
 /*-----------------------------------------------------------------------------------*/
 /* Sobre os desenvolvedores */
+.desenvolvedores h2 {
+    color: var(--verde-escuro);
+    font-size: 30px;
+    font-family: 'montserrat', sans-serif;
+    padding: 60px 10% 20px 10%;
+}
 
+.desenvolvedores p {
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 30px;
+    text-align: justify;
+    font-family: 'roboto', sans-serif;
+    max-width: 950px;
+    padding: 0 10%;
+}
+
+/* Grade 3x2 */
 #desenvolvedoresGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 50px;
+    padding: 20px 10%;
 }
+
+/* Design dos box dos desenvolvedores*/
+
+/* ------------------- Desenvolvedor 01 ------------------- */
+.desenvolvedor01 {
+    background-color: var(--verde);
+    padding: 20px 10%;
+    text-align: center;
+}
+
+.desenvolvedor01 h3 {
+    font-family: 'montserrat', sans-serif;
+    color: var(--verde-escuro);
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.desenvolvedor01 h4 {
+    font-family: 'montserrat', sans-serif;
+    color: var(--verde-escuro);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.desenvolvedor01 p {
+    font-family: 'roboto', sans-serif;
+    color: black;
+    font-size: 16px;
+}
+
+/* ------------------- Desenvolvedor 02 ------------------- */
+.desenvolvedor02 {
+    background-color: var(--azul);
+    padding: 20px 10%;
+    text-align: center;
+}
+
+.desenvolvedor02 h3 {
+    font-family: 'montserrat', sans-serif;
+    color: var(--turquesa);
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.desenvolvedor02 h4 {
+    font-family: 'montserrat', sans-serif;
+    color: var(--turquesa);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.desenvolvedor02 p {
+    font-family: 'roboto', sans-serif;
+    color: black;
+    font-size: 16px;
+}
+
+/* ------------------- Desenvolvedor 03 ------------------- */
+.desenvolvedor03 {
+    background-color: var(--verde);
+    padding: 20px 10%;
+    text-align: center;
+}
+
+.desenvolvedor03 h3 {
+    font-family: 'montserrat', sans-serif;
+    color: var(--verde-escuro);
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.desenvolvedor03 h4 {
+    font-family: 'montserrat', sans-serif;
+    color: var(--verde-escuro);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.desenvolvedor03 p {
+    font-family: 'roboto', sans-serif;
+    color: black;
+    font-size: 16px;
+}
+
+/* ------------------- Desenvolvedor 04 ------------------- */
+.desenvolvedor04 {
+    background-color: var(--azul);
+    padding: 20px 10%;
+    text-align: center;
+}
+
+.desenvolvedor04 h3 {
+    font-family: 'montserrat', sans-serif;
+    color: var(--turquesa);
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.desenvolvedor04 h4 {
+    font-family: 'montserrat', sans-serif;
+    color: var(--turquesa);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.desenvolvedor04 p {
+    font-family: 'roboto', sans-serif;
+    color: black;
+    font-size: 16px;
+}
+
+/* ------------------- Desenvolvedor 05 ------------------- */
+.desenvolvedor05 {
+    background-color: var(--verde);
+    padding: 20px 10%;
+    text-align: center;
+}
+
+.desenvolvedor05 h3 {
+    font-family: 'montserrat', sans-serif;
+    color: var(--verde-escuro);
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.desenvolvedor05 h4 {
+    font-family: 'montserrat', sans-serif;
+    color: var(--verde-escuro);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.desenvolvedor05 p {
+    font-family: 'roboto', sans-serif;
+    color: black;
+    font-size: 16px;
+}
+
+/* ------------------- Desenvolvedor 06 ------------------- */
+.desenvolvedor06 {
+    background-color: var(--azul);
+    padding: 20px 10%;
+    text-align: center;
+}
+
+.desenvolvedor06 h3 {
+    font-family: 'montserrat', sans-serif;
+    color: var(--turquesa);
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.desenvolvedor06 h4 {
+    font-family: 'montserrat', sans-serif;
+    color: var(--turquesa);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.desenvolvedor06 p {
+    font-family: 'roboto', sans-serif;
+    color: black;
+    font-size: 16px;
+}
+
+/*-----------------------------------------------------------------------------------*/
 
 /* Estilos gerais do flip card */
 .flip-card {
     background-color: transparent;
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: auto;
     perspective: 1000px; /* Adiciona uma perspectiva para o efeito 3D */
-  }
+    padding-bottom: 100px;
+}
   
-  .flip-card-inner {
+.flip-card-inner {
     position: relative;
     width: auto;
     height: auto;
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-  }
+}
+
+.flip-card-inner img {
+    border: 5px solid white;
+    border-radius: 100%;
+}
   
-  .flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg); /* Gira o card ao passar o mouse */
-  }
+}
   
-  .flip-card-front, .flip-card-back {
+.flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden; /* Oculta o lado traseiro quando não está visível */
-  }
+}
   
-  .flip-card-front {
+.flip-card-front {
     background-color: var(--branco);
     color: black;
-  }
+}
   
-  .flip-card-back {
+.flip-card-back {
     background-color: #f1f1f1;
     color: black;
     transform: rotateY(180deg); /* Gira o lado de trás em 180 graus */
-  }
-  
+}
 
 /*-----------------------------------------------------------------------------------*/
 /* Contate-nos */
