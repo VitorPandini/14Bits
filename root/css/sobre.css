@@ -3,20 +3,146 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
 }
 
-/* Header */
+:root {
+    --branco: #FFFFFF;
+    --laranja: #FF8800;
+    --amarelo: #FFD23F;
+    --verde: #75C200;
+    --verde-escuro: #003315;
+    --turquesa: #005054;
+    --azul: #00BAD6;
+    --azul-escuro: #1B1464;
+  }
 
+/*-----------------------------------------------------------------------------------*/
+/* Header */
+header {
+    background-color: #003315;
+    text-align: center;
+}
 
 /* Menu de navegação */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    background-color: #003315;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #FFC000; 
+}
+
+/* Media query para smartphones */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 20px 5%;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Primeira seção do site*/
+.sobre {
+    display: flex;
+    gap: 50px;
+    background-color: #003315;
+    padding: 10px 10%;
+    align-items: center;
+}
+
+h1 {
+    text-align: left;
+    color: #FFC000;
+    font-size: 40px;
+    background-color: #003315;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 700;
+    padding: 10px 10%;
+}
+
+.sobre h2 {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: 'montserrat', sans-serif;
+    padding: 20px 0;
+}
+
+.sobre p {
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    font-family: 'roboto', sans-serif;
+    max-width: 950px;
+    text-indent: 60px;
+}
+
+.sobre img {
+    flex: 1; /* A imagem ocupa todo o espaço disponível */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Manter a proporção da imagem */
+}
+
+.barra-colorida {
+    background-color: #003315;
+    width: 100%;
+    padding: 10px 10%;
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .sobre {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 5%;
+    }
+
+    h1 {
+        font-size: 32px;
+        padding: 10px 5%;
+    }
+
+    .sobre h2 {
+        font-size: 1.5em;
+    }
+
+    .sobre p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .sobre img {
+        width: 100%;
+        height: auto;
+    }
+
+    .barra-colorida {
+        padding: 10px 5%;
+    }
+}
 
 
-/* Título H1 */
-
-
-/* Sobre o projeto */
-
-
+/*-----------------------------------------------------------------------------------*/
 /* Sobre os desenvolvedores */
 
 #desenvolvedoresGrid {
@@ -32,3 +158,11 @@
 
 
 /* Footer */
+footer {
+    background-color: #003315;
+    width: 100%;
+    text-align: center;
+    color: var(--branco);
+    padding: 10px 0;
+    font-family: 'Roboto', sans-serif;
+}
