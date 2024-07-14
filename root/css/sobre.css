@@ -21,7 +21,7 @@
 /*-----------------------------------------------------------------------------------*/
 /* Header */
 header {
-    background-color: #003315;
+    background-color: var(--verde-escuro);
     text-align: center;
 }
 
@@ -31,20 +31,20 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 50px 10%;
-    background-color: #003315;
+    background-color: var(--verde-escuro);
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
 
 nav a {
-    color: white;
+    color: var(--branco);
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #FFC000; 
+    color: var(--amarelo); 
 }
 
 /* Media query para smartphones */
@@ -65,30 +65,30 @@ nav a:hover {
 .sobre {
     display: flex;
     gap: 50px;
-    background-color: #003315;
+    background-color: var(--verde-escuro);
     padding: 10px 10%;
     align-items: center;
 }
 
 h1 {
     text-align: left;
-    color: #FFC000;
+    color: var(--amarelo);
     font-size: 40px;
-    background-color: #003315;
+    background-color: var(--verde-escuro);
     font-family: 'montserrat', sans-serif;
     font-weight: 700;
     padding: 10px 10%;
 }
 
 .sobre h2 {
-    color: #FFFFFF;
+    color: var(--branco);
     font-size: 30px;
     font-family: 'montserrat', sans-serif;
     padding: 20px 0;
 }
 
 .sobre p {
-    color: white;
+    color: var(--branco);
     font-size: 18px;
     line-height: 30px;
     text-align: justify;
@@ -104,7 +104,7 @@ h1 {
 }
 
 .barra-colorida {
-    background-color: #003315;
+    background-color: var(--verde-escuro);
     width: 100%;
     padding: 10px 10%;
 }
@@ -180,7 +180,7 @@ h1 {
   }
   
   .flip-card-front {
-    background-color: #fff;
+    background-color: var(--branco);
     color: black;
   }
   
@@ -200,10 +200,11 @@ h1 {
 
 /* Footer */
 footer {
-    background-color: #003315;
+    background-color: var(--verde-escuro);
     width: 100%;
     text-align: center;
     color: var(--branco);
     padding: 10px 0;
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
