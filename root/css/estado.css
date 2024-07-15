@@ -1,3 +1,6 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /* Root */
 :root {
   --branco: #FFFFFF;
@@ -24,14 +27,78 @@ body {
 }
 
 /* Header/Cabeçalho */
-
+header {
+  background-color: var(--verde-escuro);
+  text-align: center;
+}
 
 /* Navbar/Menu de navegação */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: var(--verde-escuro);
+  
+  a {
+    padding: 20px;
+    color: var(--branco);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.5s ease;
+  }
+  
+  a:hover {
+    background-color: var(--turquesa);
+    color: var(--amarelo);
+  }
+}
 
+nav img {
+  height: 50px;
+}
 
 /* Conteúdo de Estado */
+section {
+  display: flex;
+  flex-direction: row;
+}
+
+section > div {
+  align-content: center;
+  width: 50%;
+  padding: 50px 10%;
+}
+
+section > div:last-child {
+  width: 50%;
+  padding: 50px;
+}
+
+h1, h2, h3, h4 {
+  padding: 15px 0;
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 32px;
+}
+
 a {
+  font-size: 18px;
+  font-weight: 700;
   color: var(--azul-escuro);
+  text-decoration: none;
   transition: all 0.3 ease;
 }
 a:hover {
@@ -42,9 +109,68 @@ p {
   font-size: 18px;
 }
 
+button {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--branco);
+  background-color: var(--laranja);
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  background-color: var(--turquesa);
+}
+
 /* Footer/Rodapé */
 footer {
+  position: fixed;
+  bottom: 0;
   width: 100%;
+  padding: 10px 0;
   text-align: center;
+  background-color: var(--verde-escuro);
   color: var(--branco);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+/* Media query mobile */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 10px 5px;
+
+    a {
+      font-size: 16px;
+      padding: 10px;
+    }
+
+    img {
+      height: 25px;
+    }
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section > div,
+  section > div:last-child  {
+    width: 100%;
+    padding: 20px;
+  }
+
+  footer {
+    position: relative;
+  }
 }
