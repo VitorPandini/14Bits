@@ -11,12 +11,14 @@ Para clonar o repositório, faça o seguinte:
 4. Verifique se deu certo, listando as pastas com o comando `ls`
 5. Entre no repositório clonado, com `cd nome_do_repositorio`
 
+### Verificar se está na branch certa
+- Migre para a branch `developer` com o comando `git checkout developer`
+- Verifique a branch atual com `git branch` ou `git branch -a` para ver todas as branches
+- Também é possível fazer isso com `git status` que diz se a branch atual está atualizada
+
 ### Se você já tem o repositório em sua máquina local
 Certifique-se de que seu repositório local está com as atualizações mais recentes do repósitorio remoto:
-- Execute `git fetch` e após isso, `git pull`
-
-### Verificar se está na branch certa
-- Migre para a branch `developer` com `git checkout developer`
+- Execute `git fetch origin developer` e após isso, `git pull origin developer`
 
 ### Para alterações em geral realize esse fluxo
 - Após realizar as alterações, faça um `git add .` que vai preparar as alterações de todos arquivos editados para serem commitados.
