@@ -131,6 +131,16 @@ button:hover {
   background-color: var(--turquesa);
 }
 
+/* Separador colorido */
+main {
+  img {
+    position: fixed;
+    bottom: 60px;
+    width: 100%;
+    height: 30px;
+  }
+}
+
 /* Footer/Rodapé */
 footer {
   position: fixed;
@@ -168,6 +178,14 @@ footer {
     > div:last-child  {
       width: 100%;
       padding: 20px;
+    }
+  }
+
+  main {
+    img {
+      position: static;
+      width: 100%;
+      height: 20px;
     }
   }
 
