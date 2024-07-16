@@ -30,33 +30,63 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 10%;
+    padding: 30px 10%;
     background-color: var(--verde-escuro);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-}
-
-nav a {
-    color: var(--branco);
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: var(--amarelo); 
+  
+    img {
+      height: 50px;
+    }
+  
+    a {
+      padding: 20px;
+      color: var(--branco);
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      transition: all 0.5s ease;
+    }
+    
+    a:hover {
+      background-color: var(--turquesa);
+      color: var(--amarelo);
+    }
 }
 
 /* Media query para smartphones */
+@media (max-width: 1400px) {
+    nav {
+      justify-content: center;
+      padding: 30px 0;
+  
+      img {
+        height: 20px;
+      }
+    }
+}  
+
+@media (max-width: 992px) {
+    nav a {
+      font-size: 16px;
+      padding: 15px;
+    }
+}
+
 @media (max-width: 768px) {
     nav {
-        flex-direction: column;
-        padding: 20px 5%;
-    }
-
-    nav a {
+      flex-direction: column;
+      padding: 10px 5px;
+  
+      a {
         font-size: 16px;
-        padding: 10px 0;
+        padding: 10px;
+      }
+
+      img {
+        height: 20px;
+      }
+
     }
 }
 
@@ -64,6 +94,7 @@ nav a:hover {
 /* Primeira seção do site*/
 .sobre {
     display: flex;
+    justify-content: space-around;
     gap: 50px;
     background-color: var(--verde-escuro);
     padding: 10px 10%;
@@ -81,27 +112,27 @@ h1 {
 }
 
 .sobre h2 {
+
+    flex: 1;
     color: var(--branco);
     font-size: 30px;
     font-family: 'montserrat', sans-serif;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .sobre p {
+    flex: 1;
     color: var(--branco);
     font-size: 18px;
     font-weight: normal;
     line-height: 30px;
     text-align: justify;
     font-family: 'roboto', sans-serif;
-    max-width: 950px;
-    text-indent: 60px;
+    padding: 10px 0;
 }
 
 .sobre img {
-    flex: 1; 
-    max-width: 100%; 
-    height: auto; 
+    flex: 1;
 }
 
 .barra-colorida {
@@ -475,9 +506,14 @@ h1 {
 }
 
 .contato01 img {
-    width: 64px; 
+    max-width: 100%; 
     height: auto;
     padding: 10px 20px 0 0; 
+}
+
+.contato01 img:hover {
+    transform: scale(1.1); 
+
 }
 
 /* Formulário */
@@ -503,19 +539,27 @@ h1 {
 .contato02 label {
     font-size: 18px;
     font-family: 'roboto', sans-serif;
+    color: var(--verde-escuro);
+    font-weight: 700;
 }
 
 .contato02 button {
-    font-family: "montserrat", sans-serif;
+    width: 100%;
+    max-width: 200px;
+    padding: 20px 30px;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 700;
-    color: #FFFFFF;
+    text-transform: uppercase;
+    color: var(--branco);
     background-color: var(--laranja);
-    padding: 15px;
     border: none;
     cursor: pointer;
-    outline: none;
-    transition: background-color 0.3s;
+    transition: all 0.5s ease;
+}
+
+.contato02 button:hover {
+    background-color: var(--turquesa);
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -527,23 +571,20 @@ h1 {
     display: flex;
     gap: 50px;
     background-color: var(--verde);
-    padding: 1%;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .repositorio h2 {
-    flex: 1;
     flex-wrap: wrap;
     color: var(--verde-escuro);
     font-size: 30px;
     font-family: 'montserrat', sans-serif;
     font-weight: 700;
-    padding: 15px;
 }
 
 .repositorio p {
-    flex: 1;
     flex-wrap: wrap;
     color: var(--verde-escuro);
     font-size: 18px;
@@ -551,25 +592,30 @@ h1 {
     font-weight: normal;
     line-height: 20px;
     text-align: justify;
-    padding: 15px;
 }
 
 .repositorio button {
-    flex: 1;
-    flex-wrap: wrap;
-    font-family: "montserrat", sans-serif;
+    width: 100%;
+    max-width: 200px;
+    padding: 20px 30px;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 700;
-    color: #FFFFFF;
+    text-transform: uppercase;
+    color: var(--branco);
     background-color: var(--laranja);
-    transition: background-color 0.3s;
     border: none;
     cursor: pointer;
+    transition: all 0.5s ease;
 }
 
 .repositorio button a {
     color: inherit;
     text-decoration: none;
+}
+
+.repositorio button:hover {
+    background-color: var(--turquesa);
 }
 
 /* Media Queries para Responsividade */
