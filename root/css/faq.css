@@ -1,0 +1,142 @@
+/* Root */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --branco: #FFFFFF;
+    --laranja: #FF8800;
+    --amarelo: #FFD23F;
+    --verde: #75C200;
+    --verde-escuro: #003315;
+    --turquesa: #005054;
+    --azul: #00BAD6;
+    --azul-escuro: #1B1464;
+  }
+
+/*-----------------------------------------------------------------------------------*/
+/* Header */
+header {
+    background-color: var(--verde-escuro);
+    text-align: center;
+}
+
+/* Menu de navegação */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    background-color: var(--verde-escuro);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+nav a {
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--amarelo); 
+}
+
+/* Media query para smartphones */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 20px 5%;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+}
+
+main{
+   
+    height: auto;
+    background-color: var(--verde-escuro);
+    background-image: url(/root/assets/images/mapa-aviao.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+       
+}
+
+#titulo{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--amarelo);
+    font-family Montserrat e Roboto
+    font-size: 40px;
+
+}
+
+#subtitulo{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo details summary{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#perguntas{
+
+    color: var(--verde-escuro);
+    font-size: 30px;
+    height: 60px;
+    display: flex;
+    background-color: whitesmoke;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family Montserrat e Roboto
+}
+
+p{
+ 
+    color: var(--amarelo);
+    font-family Montserrat e Roboto
+    font-size: 40px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: 10px;
+    
+    border-radius: 10px;
+    
+}
+
+
+
+
+footer {
+    background-color: var(--verde-escuro);
+    width: 100%;
+    text-align: center;
+    color: var(--branco);
+    padding: 10px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}

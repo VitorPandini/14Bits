@@ -1,0 +1,627 @@
+/* Root */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --branco: #FFFFFF;
+    --laranja: #FF8800;
+    --amarelo: #FFD23F;
+    --verde: #75C200;
+    --verde-escuro: #003315;
+    --turquesa: #005054;
+    --azul: #00BAD6;
+    --azul-escuro: #1B1464;
+  }
+
+/*-----------------------------------------------------------------------------------*/
+/* Header */
+header {
+    background-color: var(--verde-escuro);
+    text-align: center;
+}
+
+/* Menu de navegação */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    background-color: var(--verde-escuro);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+nav a {
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--amarelo); 
+}
+
+/* Media query para smartphones */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 20px 5%;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Primeira seção do site*/
+.sobre {
+    display: flex;
+    gap: 50px;
+    background-color: var(--verde-escuro);
+    padding: 10px 10%;
+    align-items: center;
+}
+
+h1 {
+    text-align: left;
+    color: var(--amarelo);
+    font-size: 40px;
+    background-color: var(--verde-escuro);
+    font-family: 'montserrat', sans-serif;
+    font-weight: 700;
+    padding: 10px 10%;
+}
+
+.sobre h2 {
+    color: var(--branco);
+    font-size: 30px;
+    font-family: 'montserrat', sans-serif;
+    padding: 20px 0;
+}
+
+.sobre p {
+    color: var(--branco);
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 30px;
+    text-align: justify;
+    font-family: 'roboto', sans-serif;
+    max-width: 950px;
+    text-indent: 60px;
+}
+
+.sobre img {
+    flex: 1; 
+    max-width: 100%; 
+    height: auto; 
+}
+
+.barra-colorida {
+    background-color: var(--verde-escuro);
+    width: 100%;
+    padding: 10px 10%;
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .sobre {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 5%;
+    }
+
+    h1 {
+        font-size: 32px;
+        padding: 10px 5%;
+    }
+
+    .sobre h2 {
+        font-size: 1.5em;
+    }
+
+    .sobre p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .sobre img {
+        width: 100%;
+        height: auto;
+    }
+
+    .barra-colorida {
+        padding: 10px 5%;
+    }
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/* Sobre os desenvolvedores */
+.desenvolvedores h2 {
+    color: var(--verde-escuro);
+    font-size: 30px;
+    font-family: 'montserrat', sans-serif;
+    padding: 60px 10% 20px 10%;
+}
+
+.desenvolvedores p {
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 30px;
+    text-align: justify;
+    font-family: 'roboto', sans-serif;
+    max-width: 950px;
+    padding: 0 10%;
+}
+
+/* Grade 3x2 */
+#desenvolvedoresGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 20px 10%;
+}
+
+/* Design dos box dos desenvolvedores*/
+
+/* ------------------- Desenvolvedor 01 ------------------- */
+.desenvolvedor01 {
+    background-color: var(--verde);
+    padding: 20px 10%;
+    text-align: center;
+}
+
+.desenvolvedor01 h3 {
+    font-family: 'montserrat', sans-serif;
+    color: var(--verde-escuro);
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.desenvolvedor01 h4 {
+    font-family: 'montserrat', sans-serif;
+    color: var(--verde-escuro);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.desenvolvedor01 p {
+    font-family: 'roboto', sans-serif;
+    color: black;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+/* ------------------- Desenvolvedor 02 ------------------- */
+.desenvolvedor02 {
+    background-color: var(--azul);
+    padding: 20px 10%;
+    text-align: center;
+}
+
+.desenvolvedor02 h3 {
+    font-family: 'montserrat', sans-serif;
+    color: var(--turquesa);
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.desenvolvedor02 h4 {
+    font-family: 'montserrat', sans-serif;
+    color: var(--turquesa);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.desenvolvedor02 p {
+    font-family: 'roboto', sans-serif;
+    color: black;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+/* ------------------- Desenvolvedor 03 ------------------- */
+.desenvolvedor03 {
+    background-color: var(--verde);
+    padding: 20px 10%;
+    text-align: center;
+}
+
+.desenvolvedor03 h3 {
+    font-family: 'montserrat', sans-serif;
+    color: var(--verde-escuro);
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.desenvolvedor03 h4 {
+    font-family: 'montserrat', sans-serif;
+    color: var(--verde-escuro);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.desenvolvedor03 p {
+    font-family: 'roboto', sans-serif;
+    color: black;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+/* ------------------- Desenvolvedor 04 ------------------- */
+.desenvolvedor04 {
+    background-color: var(--azul);
+    padding: 20px 10%;
+    text-align: center;
+}
+
+.desenvolvedor04 h3 {
+    font-family: 'montserrat', sans-serif;
+    color: var(--turquesa);
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.desenvolvedor04 h4 {
+    font-family: 'montserrat', sans-serif;
+    color: var(--turquesa);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.desenvolvedor04 p {
+    font-family: 'roboto', sans-serif;
+    color: black;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+/* ------------------- Desenvolvedor 05 ------------------- */
+.desenvolvedor05 {
+    background-color: var(--verde);
+    padding: 20px 10%;
+    text-align: center;
+}
+
+.desenvolvedor05 h3 {
+    font-family: 'montserrat', sans-serif;
+    color: var(--verde-escuro);
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.desenvolvedor05 h4 {
+    font-family: 'montserrat', sans-serif;
+    color: var(--verde-escuro);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.desenvolvedor05 p {
+    font-family: 'roboto', sans-serif;
+    color: black;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+/* ------------------- Desenvolvedor 06 ------------------- */
+.desenvolvedor06 {
+    background-color: var(--azul);
+    padding: 20px 10%;
+    text-align: center;
+}
+
+.desenvolvedor06 h3 {
+    font-family: 'montserrat', sans-serif;
+    color: var(--turquesa);
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.desenvolvedor06 h4 {
+    font-family: 'montserrat', sans-serif;
+    color: var(--turquesa);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.desenvolvedor06 p {
+    font-family: 'roboto', sans-serif;
+    color: black;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+/* Estilos gerais do flip card */
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    perspective: 1000px; /* Adiciona uma perspectiva para o efeito 3D */
+    padding-bottom: 100px;
+}
+  
+.flip-card-inner {
+    position: relative;
+    width: auto;
+    height: auto;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-inner img {
+    border: 5px solid white;
+    border-radius: 100%;
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); /* Gira o card ao passar o mouse */
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Oculta o lado traseiro quando não está visível */
+}
+  
+.flip-card-front {
+    background-color: var(--branco);
+    color: black;
+}
+  
+.flip-card-back {
+    background-color: #f1f1f1;
+    color: black;
+    transform: rotateY(180deg); /* Gira o lado de trás em 180 graus */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+    .desenvolvedor01, .desenvolvedor02, .desenvolvedor03, .desenvolvedor04, .desenvolvedor05, .desenvolvedor06 {
+        padding: 15px 5%;
+    }
+
+    .desenvolvedor01 h3, .desenvolvedor02 h3, .desenvolvedor03 h3, .desenvolvedor04 h3, .desenvolvedor05 h3, .desenvolvedor06 h3 {
+        font-size: 16px;
+    }
+
+    .desenvolvedor01 h4, .desenvolvedor02 h4, .desenvolvedor03 h4, .desenvolvedor04 h4, .desenvolvedor05 h4, .desenvolvedor06 h4 {
+        font-size: 14px;
+    }
+
+    .desenvolvedor01 p, .desenvolvedor02 p, .desenvolvedor03 p, .desenvolvedor04 p, .desenvolvedor05 p, .desenvolvedor06 p {
+        font-size: 14px;
+    }
+
+    /* Ajuste de gap para layout de grid ou flexbox */
+    #desenvolvedoresGrid {
+        gap: 20px; /* Ajuste conforme necessário */
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .desenvolvedor01, .desenvolvedor02, .desenvolvedor03, .desenvolvedor04, .desenvolvedor05, .desenvolvedor06 {
+        padding: 10px 2%;
+    }
+
+    .desenvolvedor01 h3, .desenvolvedor02 h3, .desenvolvedor03 h3, .desenvolvedor04 h3, .desenvolvedor05 h3, .desenvolvedor06 h3 {
+        font-size: 14px;
+    }
+
+    .desenvolvedor01 h4, .desenvolvedor02 h4, .desenvolvedor03 h4, .desenvolvedor04 h4, .desenvolvedor05 h4, .desenvolvedor06 h4 {
+        font-size: 12px;
+    }
+
+    .desenvolvedor01 p, .desenvolvedor02 p, .desenvolvedor03 p, .desenvolvedor04 p, .desenvolvedor05 p, .desenvolvedor06 p {
+        font-size: 12px;
+    }
+
+    /* Ajuste de gap para layout de grid ou flexbox */
+    #desenvolvedoresGrid {
+        gap: 10px; /* Ajuste conforme necessário */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Contate-nos */
+.contatenos {
+    padding: 60px 10% 20px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    
+}
+
+.contato01 {
+    flex: 1;
+}
+
+.contato01 h2 {
+    color: var(--verde-escuro);
+    font-size: 30px;
+    font-family: 'montserrat', sans-serif;
+    padding: 20px 0;
+}
+
+.contato01 p {
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 30px;
+    text-align: justify;
+    font-family: 'roboto', sans-serif;
+}
+
+.contato01 img {
+    width: 64px; 
+    height: auto;
+    padding: 10px 20px 0 0; 
+}
+
+/* Formulário */
+.contato02 {
+    flex: 1;
+}
+
+.contato02 form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contato02 input[type="text"], input[type="email"], textarea {
+    padding: 5px;
+    font-size: 16px;
+    border: 3px solid var(--verde);
+    width: 100%;
+    height: auto;
+    outline: none;
+}
+
+.contato02 label {
+    font-size: 18px;
+    font-family: 'roboto', sans-serif;
+}
+
+.contato02 button {
+    font-family: "montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: var(--laranja);
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Repositório */
+.repositorio {
+    flex: 1;
+    flex-wrap: wrap;
+    margin: 40px 10%;
+    display: flex;
+    gap: 50px;
+    background-color: var(--verde);
+    padding: 1%;
+    justify-content: center;
+    text-align: center;
+}
+
+.repositorio h2 {
+    flex: 1;
+    flex-wrap: wrap;
+    color: var(--verde-escuro);
+    font-size: 30px;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 700;
+    padding: 15px;
+}
+
+.repositorio p {
+    flex: 1;
+    flex-wrap: wrap;
+    color: var(--verde-escuro);
+    font-size: 18px;
+    font-family: 'roboto', sans-serif;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: justify;
+    padding: 15px;
+}
+
+.repositorio button {
+    flex: 1;
+    flex-wrap: wrap;
+    font-family: "montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: var(--laranja);
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.repositorio button a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+    .repositorio {
+        gap: 50px;
+    }
+
+    .repositorio h2, .repositorio p, .repositorio button {
+        flex: 1 1 45%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .repositorio {
+        gap: 25px;
+        flex-direction: column; 
+    }
+
+    .repositorio h2, .repositorio p, .repositorio button {
+        flex: 1 1 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .repositorio {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .repositorio h2 {
+        font-size: 24px; 
+    }
+
+    .repositorio p {
+        font-size: 16px; 
+    }
+
+    .repositorio button {
+        font-size: 18px; 
+        padding: 10px; 
+    }
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Footer */
+footer {
+    background-color: var(--verde-escuro);
+    width: 100%;
+    text-align: center;
+    color: var(--branco);
+    padding: 10px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
