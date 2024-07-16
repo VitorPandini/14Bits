@@ -59,24 +59,24 @@ nav {
     nav {
       justify-content: center;
       padding: 30px 0;
-  
+      gap: 20px;
+      
+      a {
+        font-size: 16px;
+        padding: 10px;
+      }
+
       img {
-        height: 20px;
+        height: 30px;
       }
     }
 }  
-
-@media (max-width: 992px) {
-    nav a {
-      font-size: 16px;
-      padding: 15px;
-    }
-}
 
 @media (max-width: 768px) {
     nav {
       flex-direction: column;
       padding: 10px 5px;
+      gap: 10px;
   
       a {
         font-size: 16px;
@@ -142,16 +142,17 @@ h1 {
 }
 
 /* Media query para telas menores */
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
     .sobre {
         flex-direction: column;
         gap: 20px;
-        padding: 20px 5%;
+        padding: 20px 80px;
     }
 
     h1 {
         font-size: 32px;
-        padding: 10px 5%;
+        padding: 10px 0;
+        text-align: center;
     }
 
     .sobre h2 {
@@ -170,6 +171,40 @@ h1 {
 
     .barra-colorida {
         padding: 10px 5%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .sobre {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 45px;
+    }
+
+    h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .sobre h2 {
+        font-size: 1.5em;
+        padding: 5px 5%;
+    }
+
+    .sobre p {
+        font-size: 14px;
+        line-height: 28px;
+        line-height: 20px;
+    }
+
+    .sobre img {
+        width: 100%;
+        height: auto;
+    }
+
+    .barra-colorida {
+        padding: 10px 10%;
     }
 }
 
@@ -428,19 +463,19 @@ h1 {
 /* Media Queries para Responsividade */
 @media (max-width: 1200px) {
     .desenvolvedor01, .desenvolvedor02, .desenvolvedor03, .desenvolvedor04, .desenvolvedor05, .desenvolvedor06 {
-        padding: 15px 5%;
+        padding: 20px 5%;
     }
 
     .desenvolvedor01 h3, .desenvolvedor02 h3, .desenvolvedor03 h3, .desenvolvedor04 h3, .desenvolvedor05 h3, .desenvolvedor06 h3 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .desenvolvedor01 h4, .desenvolvedor02 h4, .desenvolvedor03 h4, .desenvolvedor04 h4, .desenvolvedor05 h4, .desenvolvedor06 h4 {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .desenvolvedor01 p, .desenvolvedor02 p, .desenvolvedor03 p, .desenvolvedor04 p, .desenvolvedor05 p, .desenvolvedor06 p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     /* Ajuste de gap para layout de grid ou flexbox */
@@ -452,26 +487,32 @@ h1 {
 }
 
 @media (max-width: 768px) {
+    .desenvolvedores h2 {
+        font-size: 1.5em;
+    }
+
     .desenvolvedor01, .desenvolvedor02, .desenvolvedor03, .desenvolvedor04, .desenvolvedor05, .desenvolvedor06 {
-        padding: 10px 2%;
+        padding: 15px 2%;
     }
 
     .desenvolvedor01 h3, .desenvolvedor02 h3, .desenvolvedor03 h3, .desenvolvedor04 h3, .desenvolvedor05 h3, .desenvolvedor06 h3 {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .desenvolvedor01 h4, .desenvolvedor02 h4, .desenvolvedor03 h4, .desenvolvedor04 h4, .desenvolvedor05 h4, .desenvolvedor06 h4 {
-        font-size: 12px;
+        font-size: 16px;
+        padding: 5px 15px;
     }
 
     .desenvolvedor01 p, .desenvolvedor02 p, .desenvolvedor03 p, .desenvolvedor04 p, .desenvolvedor05 p, .desenvolvedor06 p {
-        font-size: 12px;
+        font-size: 16px;
+        padding: 5px 15px;
     }
 
     /* Ajuste de gap para layout de grid ou flexbox */
     #desenvolvedoresGrid {
         gap: 10px; /* Ajuste conforme necessário */
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr; /* Transforma em lista vertical */
     }
 }
 
@@ -565,19 +606,19 @@ h1 {
 /*-----------------------------------------------------------------------------------*/
 /* Repositório */
 .repositorio {
+    display: grid;
     flex: 1;
-    flex-wrap: wrap;
-    margin: 40px 10%;
-    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
+    margin: 40px 10%;
     background-color: var(--verde);
-    justify-content: center;
     align-items: center;
     padding: 20px;
+    justify-items: center; /* Alinha horizontalmente ao centro */
+    align-items: center; /* Alinha verticalmente ao centro */
 }
 
 .repositorio h2 {
-    flex-wrap: wrap;
     color: var(--verde-escuro);
     font-size: 30px;
     font-family: 'montserrat', sans-serif;
@@ -585,13 +626,11 @@ h1 {
 }
 
 .repositorio p {
-    flex-wrap: wrap;
     color: var(--verde-escuro);
     font-size: 18px;
     font-family: 'roboto', sans-serif;
     font-weight: normal;
     line-height: 20px;
-    text-align: justify;
 }
 
 .repositorio button {
@@ -619,44 +658,24 @@ h1 {
 }
 
 /* Media Queries para Responsividade */
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     .repositorio {
-        gap: 50px;
+        gap: 30px;
     }
 
     .repositorio h2, .repositorio p, .repositorio button {
-        flex: 1 1 45%; 
+        flex: 1 1 50%; 
     }
 }
 
 @media (max-width: 768px) {
     .repositorio {
-        gap: 25px;
-        flex-direction: column; 
-    }
-
-    .repositorio h2, .repositorio p, .repositorio button {
-        flex: 1 1 100%; 
-    }
-}
-
-@media (max-width: 480px) {
-    .repositorio {
-        gap: 10px;
-        padding: 10px;
-    }
-
-    .repositorio h2 {
-        font-size: 24px; 
-    }
-
-    .repositorio p {
-        font-size: 16px; 
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+        gap: 20px; 
     }
 
     .repositorio button {
-        font-size: 18px; 
-        padding: 10px; 
+        flex: 1 1 100%;
     }
 }
 
@@ -670,4 +689,10 @@ footer {
     padding: 10px 0;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        font-size: 14px;
+    }
 }
