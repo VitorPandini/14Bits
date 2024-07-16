@@ -70,7 +70,25 @@ nav {
         height: 30px;
       }
     }
-}  
+}
+
+@media (max-width: 1050px) {
+    nav {
+        justify-content: center;
+        padding: 15px 0;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    nav img {
+        height: 20px;
+    }
+}
+
 
 @media (max-width: 768px) {
     nav {
@@ -189,13 +207,12 @@ h1 {
 
     .sobre h2 {
         font-size: 1.5em;
-        padding: 5px 5%;
+        padding: 5px 0;
     }
 
     .sobre p {
         font-size: 14px;
         line-height: 28px;
-        line-height: 20px;
     }
 
     .sobre img {
@@ -489,6 +506,13 @@ h1 {
 @media (max-width: 768px) {
     .desenvolvedores h2 {
         font-size: 1.5em;
+        padding: 40px 10% 20px 10%;
+    }
+
+    .desenvolvedores p {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 10%;
     }
 
     .desenvolvedor01, .desenvolvedor02, .desenvolvedor03, .desenvolvedor04, .desenvolvedor05, .desenvolvedor06 {
@@ -496,7 +520,7 @@ h1 {
     }
 
     .desenvolvedor01 h3, .desenvolvedor02 h3, .desenvolvedor03 h3, .desenvolvedor04 h3, .desenvolvedor05 h3, .desenvolvedor06 h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .desenvolvedor01 h4, .desenvolvedor02 h4, .desenvolvedor03 h4, .desenvolvedor04 h4, .desenvolvedor05 h4, .desenvolvedor06 h4 {
@@ -505,7 +529,7 @@ h1 {
     }
 
     .desenvolvedor01 p, .desenvolvedor02 p, .desenvolvedor03 p, .desenvolvedor04 p, .desenvolvedor05 p, .desenvolvedor06 p {
-        font-size: 16px;
+        font-size: 14px;
         padding: 5px 15px;
     }
 
@@ -547,7 +571,7 @@ h1 {
 }
 
 .contato01 img {
-    max-width: 100%; 
+    width: 80px; 
     height: auto;
     padding: 10px 20px 0 0; 
 }
@@ -601,6 +625,73 @@ h1 {
 
 .contato02 button:hover {
     background-color: var(--turquesa);
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1400px) {
+    .contatenos {
+        gap: 30px;
+    }
+
+    .contato01 h2, .contato01 p, .contato01 img {
+        flex: 1 1 50%; 
+    }
+
+    .contato02 {
+        flex: 1 1 50%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .contatenos {
+        gap: 30px;
+    }
+
+    .contato01 h2, .contato01 p, .contato01 img {
+        flex: 1 1 15%; 
+    }
+
+    .contato02 {
+        flex: 1 1 15%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .contatenos {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 10%;
+    }
+
+    .contato01 h2 {
+        font-size: 1.5em;
+    }
+
+    .contato01 p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .contato01 img {
+        width: 60px;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .contato02 {
+        flex: 1 1 100%;
+    }
+
+    .contato02 label {
+        font-size: 14px;
+    }
+
+    .contato02 button {
+        font-size: 16px; /* Exemplo de tamanho menor */
+        padding: 8px 16px; /* Exemplo de padding menor */
+    }
+
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -674,8 +765,23 @@ h1 {
         gap: 20px; 
     }
 
+    .repositorio h2 {
+        font-size: 1.5em;
+        padding: 5px 5%;
+    }
+
     .repositorio button {
         flex: 1 1 100%;
+        font-size: 16px; /* Exemplo de tamanho menor */
+        padding: 8px 16px; /* Exemplo de padding menor */
+        
+    }
+
+    .repositorio p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: center;
     }
 }
 
