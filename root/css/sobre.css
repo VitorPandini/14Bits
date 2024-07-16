@@ -94,7 +94,7 @@ nav {
     nav {
       flex-direction: column;
       padding: 10px 5px;
-      gap: 10px;
+      gap: 0;
   
       a {
         font-size: 16px;
