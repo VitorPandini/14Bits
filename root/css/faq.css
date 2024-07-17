@@ -44,8 +44,9 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--amarelo); 
-}
+    background-color: var(--turquesa);
+    color: var(--amarelo);
+  }
 
 /* Media query para smartphones */
 @media (max-width: 768px) {
@@ -78,7 +79,7 @@ main{
     justify-content: center;
     align-items: center;
     color: var(--amarelo);
-    font-family Montserrat e Roboto
+    font-family: 'Montserrat', 'Roboto', sans-serif;
     font-size: 40px;
 
 }
@@ -89,6 +90,7 @@ main{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .conteudo details summary{
@@ -100,35 +102,33 @@ main{
 
 }
 
-#perguntas{
 
+#perguntas{
     color: var(--verde-escuro);
     font-size: 30px;
     height: 60px;
     display: flex;
     background-color: whitesmoke;
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-top: 10px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 20px;
     margin-bottom: 10px;
     border-radius: 10px;
-    font-family Montserrat e Roboto
+    font-family: 'Montserrat', 'Roboto', sans-serif;
 }
 
-p{
- 
+#respostas{
+    font-family:'Roboto', sans-serif;
     color: var(--amarelo);
-    font-family Montserrat e Roboto
-    font-size: 40px;
-    margin-left: 350px;
-    margin-right: 350px;
-    margin-top: 10px;
-    
+    background-color: rgba(248, 248, 248, 0.6);
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 20px;
     border-radius: 10px;
     
 }
-
-
 
 
 footer {
