@@ -36,40 +36,87 @@ nav {
     font-weight: 700;
 }
 
+    img {
+        height: 50px;
+    }
+
 nav a {
+    padding: 20px;
     color: var(--branco);
     text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     font-size: 18px;
-    font-weight: bold;
-}
+    transition: all 0.5s ease;
+  }
 
 nav a:hover {
     background-color: var(--turquesa);
     color: var(--amarelo);
   }
 
-/* Media query para smartphones */
-@media (max-width: 768px) {
+/* Media query NAV */
+@media (max-width: 1400px) {
     nav {
-        flex-direction: column;
-        padding: 20px 5%;
+      justify-content: center;
+      padding: 30px 0;
+      gap: 20px;
+      
+      a {
+        font-size: 16px;
+        padding: 10px;
+      }
+      img {
+        height: 30px;
+      }
+
+    }
+}
+
+@media (max-width: 1050px) {
+    nav {
+        justify-content: center;
+        padding: 15px 0;
+        gap: 10px;
     }
 
     nav a {
         font-size: 16px;
-        padding: 10px 0;
+        padding: 10px;
+    }
+
+    nav img {
+        height: 20px;
     }
 }
 
+@media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      padding: 10px 5px;
+      gap: 0;
+  
+      a {
+        font-size: 16px;
+        padding: 10px;
+      }
+
+      img {
+        height: 20px;
+      }
+
+    }
+}
+
+/*-------------------------------------------------------*/
+
+/*Seção do site*/
 main{
    
-    height: auto;
-    background-color: var(--verde-escuro);
-    background-image: url(/root/assets/images/mapa-aviao.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 30%;
-       
+    height:max-content;
+    position: relative;
+    background-color: var(--verde-escuro);      
 }
 
 #titulo{
@@ -91,6 +138,8 @@ main{
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color:var(--branco);
 }
 
 .conteudo details summary{
@@ -99,13 +148,12 @@ main{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
+    font-size: 30px;
+    cursor: pointer;
 }
-
 
 #perguntas{
     color: var(--verde-escuro);
-    font-size: 30px;
     height: 60px;
     display: flex;
     background-color: whitesmoke;
@@ -115,28 +163,139 @@ main{
     margin-bottom: 10px;
     border-radius: 10px;
     font-family: 'Montserrat', 'Roboto', sans-serif;
+    
 }
 
 #respostas{
     font-family:'Roboto', sans-serif;
-    color: var(--amarelo);
+    color: var(--azul-escuro);
     background-color: rgba(248, 248, 248, 0.6);
     font-size: 20px;
     text-align: justify;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 250px;
+    margin-right: 250px;
     padding: 20px;
     border-radius: 10px;
     
 }
 
-
 footer {
-    background-color: var(--verde-escuro);
+    position:relative;
+    bottom: 0;
     width: 100%;
-    text-align: center;
-    color: var(--branco);
     padding: 10px 0;
+    text-align: center;
+    background-color: var(--verde-escuro);
+    color: var(--branco);
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+  }
+
+/* MediaS query para telas menores */
+
+/*-------- PRIMEIRO TAMANHO DE TELA-----------*/
+
+@media (max-width: 1400px) {
+   
+    #titulo {
+        font-size: 30px;
+    }
+    #subtitulo {
+        font-size: 15px;
+    }
+    #perguntas {
+        text-align: center;
+        font-size: 20px;
+        margin-left: 300px;
+        margin-right: 300px;
+        height: 70px;
+    }
+    #respostas {
+        font-size: 15px;
+        margin-left: 300px;
+        margin-right: 300px;
+      
+
+    }
+
 }
+
+/*-------- SEGUNDO TAMANHO DE TELA-----------*/
+
+@media (max-width: 1050px) {
+
+    #titulo {
+        font-size: 25px;
+    }
+    #subtitulo {
+        font-size: 12px;
+    }
+    #perguntas {
+        text-align: center;
+        font-size: 15px;
+        margin-left: 150px;
+        margin-right: 150px;
+        height: 40px;
+    }
+    #respostas {
+        font-size: 12px;
+        margin-left: 150px;
+        margin-right: 150px;
+       
+    }
+
+}
+
+/*-------- TERCEIRO TAMANHO DE TELA-----------*/
+
+@media (max-width: 768px) {
+
+    #titulo {
+        font-size: 25px;
+    }
+    #subtitulo {
+        font-size: 12px;
+    }
+    #perguntas {
+        text-align: center;
+        font-size: 15px;
+        margin-left: 150px;
+        margin-right: 150px;
+        height: 50px;
+        
+    }
+    #respostas {
+        font-size: 12px;
+        margin-left: 150px;
+        margin-right: 150px;
+       
+    }
+
+}
+
+/*-------- QUARTO TAMANHO DE TELA-----------*/
+
+@media (max-width: 600px) {
+
+    #titulo {
+        font-size: 20px;
+    }
+    #subtitulo {
+        font-size: 12px;
+    }
+    #perguntas {
+        text-align: center;
+        font-size: 12px;
+        margin-left: 50px;
+        margin-right: 50px;
+        height: 50px;
+    }
+    #respostas {
+        font-size: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+       
+    }
+
+}
+
