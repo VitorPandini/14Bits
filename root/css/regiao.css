@@ -81,7 +81,7 @@ section {
     max-width: 630px;
   }
 
-  /* Coluna direita */
+  /* Coluna direita 
   >div:last-child {
     display: grid;
     grid-template-columns: 1fr 1fr;
