@@ -193,7 +193,7 @@ div img {
 
 
 .conteudo p {
-    text-align: center;
+    text-align: -webkit-center;
     padding: 0.2cm;
     font-size: 14px;
     line-height: 20px;
