@@ -141,6 +141,10 @@ img {
     align-items: center;
 }
 
+article{
+    padding-left: 80px;
+}
+
 h1 {
     text-align: center;
     color: var(--amarelo);
@@ -154,10 +158,11 @@ article p {
     text-align: center;
 }
 h2 {
-    margin: 20px;
+    margin: 0px;
     text-align: center;
     font-family: 'montserrat', sans-serif;
-    padding: 10px;
+    padding: 10px 10%;
+    
 }
 
 .sobre h2 {
@@ -188,9 +193,9 @@ div img {
     border-radius: 50%;
     width: 20%;
     height: auto;
-
+    margin-top: 10px;
+    margin-left: 10%;
 }
-
 
 .conteudo p {
     text-align: -webkit-center;
@@ -198,6 +203,7 @@ div img {
     font-size: 14px;
     line-height: 20px;
     font-family: 'Roboto', sans-serif;
+    max-width: 85%;
 }
 
 .conteudo a {
