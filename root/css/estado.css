@@ -201,6 +201,7 @@ footer {
 
   section {
     gap: 45px;
+    margin-bottom: 30px;
   }
 }
 
@@ -215,6 +216,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 0;
   }
 
   section {
@@ -273,18 +275,23 @@ footer {
 
 /* Small breakpoint */
 @media (max-width: 576px) {
-  section > div:last-child {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.2em;
-    width: 100%;
+  section {
+    margin-bottom: 0;
 
-    /* Cards pares azuis e ímpares verdes */
-    article:nth-child(even) {
-      background-color: var(--azul);
-    }
-    article:nth-child(odd) {
-      background-color: var(--verde);
+    /* Último card */
+    > div:last-child {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.2em;
+      width: 100%;
+
+      /* Cards pares azuis e ímpares verdes */
+      article:nth-child(even) {
+        background-color: var(--azul);
+      }
+      article:nth-child(odd) {
+        background-color: var(--verde);
+      }
     }
   }
 }
