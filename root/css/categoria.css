@@ -142,7 +142,7 @@ img {
 }
 
 article{
-    padding-left: 80px;
+    padding-left: center;
 }
 
 h1 {
@@ -189,6 +189,9 @@ h2 {
     padding: 10px 10%;
 }
 
+section{
+    margin: 70px;
+}
 div img {
     border-radius: 50%;
     width: 20%;
