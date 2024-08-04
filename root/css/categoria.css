@@ -190,35 +190,37 @@ h2 {
 }
 
 section{
+    padding: 20px 20px;
     margin: 70px;
 }
 div img {
     border-radius: 50%;
     width: 20%;
     height: auto;
-    margin-top: 10px;
-    margin-left: 10%;
+    min-width: 200px;
 }
 
 .conteudo p {
-    text-align: -webkit-center;
-    padding: 0.2cm;
-    font-size: 14px;
+    padding: 5px 0;
+    font-size: 16px;
     line-height: 20px;
     font-family: 'Roboto', sans-serif;
-    max-width: 85%;
 }
 
 .conteudo a {
+    margin: 0px;
+    text-align: center;
+    font-family: 'montserrat', sans-serif;
     text-decoration: none;
     font-weight: bold;
-    color: var(--verde-escuro);
-    font-size: 14px;
+    color: var(--laranja);
     transition: all 0.5s ease;
 }
 .conteudo   a:hover {
     background-color: var(--turquesa);
+    visibility: 30%;
     color: var(--amarelo);
+    
   }
 
 /* Media query para telas menores */
