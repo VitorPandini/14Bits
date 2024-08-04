@@ -218,7 +218,6 @@ div img {
 }
 .conteudo   a:hover {
     background-color: var(--turquesa);
-    visibility: 30%;
     color: var(--amarelo);
     
   }
