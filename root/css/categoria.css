@@ -34,7 +34,7 @@ header {
 
 /* Navbar/Menu de navegação */
 nav {
-  display: flex;
+      display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
@@ -189,7 +189,7 @@ h2 {
     padding: 10px 10%;
 }
 
-section{
+section {
     padding: 20px 20px;
     margin: 70px;
 }
@@ -286,6 +286,10 @@ div img {
 
     .barra-colorida {
         padding: 10px 10%;
+    }
+
+    section {
+        margin: 0;
     }
 }
 /*-----------------------------------------------------------------------------------*/
