@@ -153,6 +153,7 @@ h1 {
     font-family: 'montserrat', sans-serif;
     font-weight: 700;
     padding: 10px 10%;
+    text-transform: uppercase;
 }
 article p {
     text-align: center;
@@ -234,7 +235,6 @@ div img {
         font-size: 32px;
         padding: 10px 0;
         text-align: center;
-        text-transform: uppercase;
     }
 
     .sobre h2 {
