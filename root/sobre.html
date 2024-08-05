@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Inserir Favicon aqui -->
+    <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon">
+    
+    <!-- Inserir CSS aqui -->
+    <link rel="stylesheet" href="css/sobre.css">
+
+    <!-- Inserir Fontes aqui -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+
     <title>Sobre o site | 14-Bits</title>
 </head>
     
@@ -12,13 +24,13 @@
         
         <!-- Menu de navegação -->
         <nav>
-            <a href="#">Norte</a>
-            <a href="#">Nordeste</a>
-            <a href="#">Centro-Oeste</a>
-            <a href="index.html"><b>14Bits</b></a>
-            <a href="regiao.html">Sudeste</a>
-            <a href="#">Sul</a>
-            <a href="sobre.html">Sobre o Site</a>
+            <a href="#">NORTE</a>
+            <a href="#">NORDESTE</a>
+            <a href="#">CENTRO-OESTE</a>
+            <a href="index.html"><img src="assets/images/14bits-nav-home.svg"></a>
+            <a href="regiao.html">SUDESTE</a>
+            <a href="#">SUL</a>
+            <a href="sobre.html">SOBRE</a>
             <a href="faq.html">FAQ</a>
         </nav>
         
@@ -27,74 +39,142 @@
     <main>
 
         <!-- Explanação sobre o site e o projeto -->
-        <h1>Sobre o site</h1> 
-        <article>
-            <div class="background-container">
-                <h2>Sobre o projeto</h2>
-                <p>Este site é o resultado do Projeto Integrador do Bootcamp Talento Cloud Pro. Idealizado pelo grupo 4 da turma 28, ele consiste em um mapa interativo que destaca curiosidades tecnológicas do Brasil. Dividido por regiões e estados, este mapa apresenta uma análise detalhada das principais contribuições históricas figuras influentes e instituições de ensino na área de Tecnologia da Informação.</p>
-            </div>
-        </article>
+        <h1>SOBRE O SITE</h1> 
+        <div class="sobre">
+            <article>
+                <h2>SOBRE O PROJETO</h2>
+                <p>O 14-bits é um site que apresenta um mapa interativo destacando curiosidades tecnológicas do Brasil, dividido por regiões e estados, com análise detalhada das principais contribuições históricas, figuras influentes e instituições de ensino na área de Tecnologia da Informação. O projeto visa democratizar informações sobre o campo tecnológico brasileiro, evidenciando a riqueza e diversidade das inovações nacionais, com um design visualmente atraente e interativo que facilita a compreensão e retenção das informações. Inspirado pelo 14-Bis de Santos Dumont, o nome "14-bits" simboliza a complexidade das inovações brasileiras em T.I., montando um quebra-cabeça tecnológico do legado nacional.</p>
+            </article>
+            <div class="mapa"><img src="assets/images/mapa-aviao.svg" alt="Ilustração de um avião sobre o mapa do Brasil" width="550" height="550" ></div>
+        </div>
+        
+        <div class="barra-colorida">
+            <img src="assets/images/barra-colorida.svg" alt="Barra colorida" width="100%" height="50">
+        </div>
+
         <section>
 
             <!-- Informações sobre os desenvolvedores do projeto -->
-            <h2>Sobre os desenvolvedores</h2>
-            <p>Conheça os desenvolvedores que elaboraram este projeto.</p>
+            <div class="desenvolvedores">
+                <h2>SOBRE OS DESENVOLVEDORES</h2>
+                <p>Conheça os desenvolvedores que elaboraram este projeto.</p>
+            </div>
 
             <!-- Grid com informações sobre cada desenvolvedor -->
-            <div id="desenvolvedores-grid">
+            <div id="desenvolvedoresGrid">
 
                 <!-- Box 1-->
-                <div class="desenvolvedor">
-                    <img src="assets/images/adlter-perfil.png" alt="Foto de perfil do desenvolvedor Adler" width="100" height="100">
-                    <h3>Adler Neto</h3>
-                    <p>Técnico em Automação Industrial</p>
+                <div class="desenvolvedor01">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="assets/images/adlter-perfil.png" alt="Foto de perfil do desenvolvedor Adler">
+                            </div>
+                            <div class="flip-card-back">
+                                <a href="https://github.com/adler-neto" target="_blank">
+                                    <img src="assets/images/octocat-github.png" alt="GitHub Octocat">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>ADLER NETO</h3>
+                    <h4>Técnico em Automação Industrial</h4>
                     <p>Busca atualização de mercado e migração de carreira de T.A. para T.I.</p>
-                    <button><a href="https://github.com/adler-neto" target="_blank">GitHub</a></button>
                 </div>
 
                 <!-- Box 2-->
-                <div class="desenvolvedor">
-                    <img src="assets/images/allef-perfil.png" alt="Foto de perfil do desenvolvedor Allef" width="100" height="100">
-                    <h3>Allef Souza</h3>
-                    <p>Eletromecânico</p>
+                <div class="desenvolvedor02">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="assets/images/allef-perfil.png" alt="Foto de perfil do desenvolvedor Allef">
+                            </div>
+                            <div class="flip-card-back">
+                                <a href="https://github.com/allef-eng" target="_blank">
+                                    <img src="assets/images/octocat-github.png" alt="GitHub Octocat">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>ALLEF SOUZA</h3>
+                    <h4>Eletromecânico</h4>
                     <p>Busca aprimorar os seus conhecimentos e ficar atualizado com as novas tecnologias.</p>
-                    <button><a href="https://github.com/allef-eng" target="_blank">GitHub</a></button>
                 </div>
 
                 <!-- Box 3-->
-                <div class="desenvolvedor">
-                    <img src="assets/images/emily-perfil.png" alt="Foto de perfil da desenvolvedora Emily" width="100" height="100">
-                    <h3>Emily Matias</h3>
-                    <p>Desenvolvedora Web Full Stack</p>
+                <div class="desenvolvedor03">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="assets/images/emily-perfil.png" alt="Foto de perfil da desenvolvedora Emily">
+                            </div>
+                            <div class="flip-card-back">
+                                <a href="https://github.com/matiasemily" target="_blank">
+                                    <img src="assets/images/octocat-github.png" alt="GitHub Octocat">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>EMILY MATIAS</h3>
+                    <h4>Desenvolvedora Web Full Stack</h4>
                     <p>Desenvolvedora freelancer em migração de carreira para a área de tecnologia.</p>
-                    <button><a href="https://github.com/matiasemily" target="_blank">GitHub</a></button>
                 </div>
 
                 <!-- Box 4-->
-                <div class="desenvolvedor">
-                    <img src="assets/images/priscila-perfil.png" alt="Foto de perfil da desenvolvedora Priscila" width="100" height="100">
-                    <h3>Priscila Hilario</h3>
-                    <p>Analista de Suporte Técnico</p>
+                <div class="desenvolvedor04">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="assets/images/priscila-perfil.png" alt="Foto de perfil da desenvolvedora Priscila">
+                            </div>
+                            <div class="flip-card-back">
+                                <a href="https://github.com/priscilahilario" target="_blank">
+                                    <img src="assets/images/octocat-github.png" alt="GitHub Octocat">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>PRISCILA HILARIO</h3>
+                    <h4>Analista de Suporte Técnico</h4>
                     <p>Em processo de migração para Cloud Computing.</p>
-                    <button><a href="https://github.com/priscilahilario" target="_blank">GitHub</a></button>
                 </div>
 
                 <!-- Box 5-->
-                <div class="desenvolvedor">
-                    <img src="assets/images/thamiris-perfil.png" alt="Foto de perfil da desenvolvedora Thamiris" width="100" height="100">
-                    <h3>Thamiris Lima</h3>
-                    <p>Analista de Marketing</p>
-                    <p>Publicitária com experiência em marketing e comunicação, em transição de carreira para a área de tecnologia.</p>
-                    <button><a href="https://github.com/thamirislimadc" target="_blank">GitHub</a></button>
+                <div class="desenvolvedor05">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="assets/images/thamiris-perfil.png" alt="Foto de perfil da desenvolvedora Thamiris">
+                            </div>
+                            <div class="flip-card-back">
+                                <a href="https://github.com/thamirislimadc" target="_blank">
+                                    <img src="assets/images/octocat-github.png" alt="GitHub Octocat">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>THAMIRIS LIMA</h3>
+                    <h4>Analista de Marketing</h4>
+                    <p>Publicitária com experiência em marketing e comunicação, em transição para a área tech.</p>
                 </div>
 
                 <!-- Box 6-->
-                <div class="desenvolvedor">
-                    <img src="assets/images/vitor-perfil.png" alt="Foto de perfil do desenvolvedor Vitor" width="100" height="100">
-                    <h3>Vitor Pandini</h3>
-                    <p>Estagiário em Análise e Desenvolvimento</p>
+                <div class="desenvolvedor06">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="assets/images/vitor-perfil.png" alt="Foto de perfil do desenvolvedor Vitor">
+                            </div>
+                            <div class="flip-card-back">
+                                <a href="https://github.com/vitorpandini" target="_blank">
+                                    <img src="assets/images/octocat-github.png" alt="GitHub Octocat">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>VITOR PANDINI</h3>
+                    <h4>Estagiário em Análise e Desenvolvimento</h4>
                     <p>Técnico em energias renováveis (solar) migrando de carreira para desenvolvedor de software.</p>
-                    <button><a href="https://github.com/vitorpandini">GitHub</a></button>
                 </div>
 
             </div>
@@ -104,38 +184,46 @@
         <section>
             
             <!-- Formulário de Contato -->
-            <h2>Contato</h2>
-            <form action="#">
-                <div class="formulario">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
+            <div class="contatenos">
+                <div class="contato01">
+                    <h2>CONTATE-NOS</h2>
+                    <p>Um grande projeto sem ótimas pessoas é irrelevante. Envie-nos sugestões ou críticas construtivas. Vamos trabalhar juntos!</p>
+                    <a href="#" target="_blank"><img src="assets/images/instagram.png" alt="Logo do Instagram"></a>
+                    <a href="#" target="_blank"><img src="assets/images/facebook.png" alt="Logo do Facebook"></a>
                 </div>
-                <div class="formulario">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+    
+                <div class="contato02">
+                    <form action="#">
+                        <div class="formulario">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                        </div>
+                        <div class="formulario-botao">
+                            <button type="submit">ENVIAR</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="formulario">
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-                </div>
-                <div class="formulario-botao">
-                    <button type="submit">Enviar</button>
-                </div>
-            </form>
+            </div>
             
         </section>
         
         <section>
 
             <!-- Box com CTA para o repositório -->
-            <div class="link-container">
-                <div class="repositorio">
-                    <h2>Repositório do Projeto</h2>
-                    <p>Confira o projeto no GitHub e sinta-se à vontade para contribuir.</p>
-                    <button><a href="https://github.com/VitorPandini/14Bits/" target="_blank">Repositório 14-Bits</a></button>
-                </div>
+            <div class="repositorio">
+                <h2>REPOSITÓRIO</h2>
+                <p>Confira o projeto no GitHub e sinta-se à vontade para contribuir.</p>
+                <button><a href="https://github.com/VitorPandini/14Bits/" target="_blank">GITHUB</a></button>
             </div>
-
+            
         </section>
         
     </main>

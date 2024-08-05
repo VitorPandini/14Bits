@@ -3,6 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Inserir Favicon aqui -->
+    <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon">
+    
+    <!-- Inserir CSS aqui -->
+    <link rel="stylesheet" href="css/faq.css">
+
+    <!-- Inserir Fontes aqui -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+
     <title>Perguntas Frequentes | 14Bits</title>
 </head>
 <body>
@@ -10,57 +22,58 @@
     <header>
       <!-- Menu de navegação -->
       <nav>
-        <a href="#">Norte</a>
-        <a href="#">Nordeste</a>
-        <a href="#">Centro-Oeste</a>
-        <a href="./index.html"><b>14Bits</b></a>
-        <a href="./regiao.html">Sudeste</a>
-        <a href="#">Sul</a>
-        <a href="./sobre.html">Sobre o Site</a>
-        <a href="./faq.html">FAQ</a>
-      </nav>
+        <a href="#">NORTE</a>
+        <a href="#">NORDESTE</a>
+        <a href="#">CENTRO-OESTE</a>
+        <a href="index.html"><img src="assets/images/14bits-nav-home.svg"></a>
+        <a href="regiao.html">SUDESTE</a>
+        <a href="#">SUL</a>
+        <a href="sobre.html">SOBRE</a>
+        <a href="faq.html">FAQ</a>
+    </nav>
     </header>
 
     <main>
-        <h1>Perguntas Frequentes (FAQ)</h1>
-        <p>Obtenha respostas a duvidas relacionadas sobre a historia tech no Brasil</p>
-    
-        <section>
+       
+        <div>
+            <h1 id="titulo">PERGUNTAS FREQUENTES (FAQ)</h1>
+            <p id="subtitulo">Obtenha respostas a duvidas relacionadas sobre a historia tech no Brasil</p>
+        </div>
+            
+        <section class="conteudo">
             
             <details>
-                <summary>O que é o projeto 14-Bits?</summary>
-                <p>O projeto "14 Bits" é um site dedicado a contar a história da tecnologia da informação no Brasil, 
+                
+                <summary id="perguntas">O que é o projeto 14-Bits?</summary>
+                <p id="respostas">O projeto "14 Bits" é um site dedicado a contar a história da tecnologia da informação no Brasil, 
                    homenageando Alberto Santos Dumont e seu 14 Bis. O objetivo é preservar a história, educar, inspirar
                    e reconhecer as contribuições brasileiras na TI.O site terá uma estrutura acessível, com seções 
                    históricas, perfis de pioneiros e conteúdos multimídia, voltado para estudantes, pesquisadores, 
-                   profissionais e entusiastas da tecnologia.
-                </p>
+                   profissionais e entusiastas da tecnologia.</p>
             </details>
             
             <details>
-                <summary>Como surgiu a ideia do site?</summary>
-                <p>Este projeto foi escolhido com o objetivo de explorar e democratizar informações sobre o campo tecnológico
+                <summary id="perguntas">Como surgiu a ideia do site?</summary>
+                <p id="respostas">Este projeto foi escolhido com o objetivo de explorar e democratizar informações sobre o campo tecnológico
                    brasileiro. Queremos evidenciar a riqueza e a diversidade das inovações e talentos nacionais, tornando esse 
-                   conhecimento acessível a todos.
-                </p>
+                   conhecimento acessível a todos.</p>
             </details>
             
             <details>
-                <summary>Como faço para relatar um problema técnico?</summary>
-                <p>Para relatar um problema técnico entre em contato com qualquer um dos desenvolvedores.</p>
+                <summary id="perguntas"> Como faço para relatar um problema técnico?</summary>
+                <p id="respostas">Para relatar um problema técnico entre em contato com qualquer um dos desenvolvedores.</p>
             </details>
             
             <details>
-                <summary>Como posso entrar em contato com os desenvolvedores?</summary>
-                <p>Na página "Sobre" encontrará informações sobre os desenvolvedores e seus contatos no github.</p>
+                <summary id="perguntas">Como posso entrar em contato com os desenvolvedores?</summary>
+                <p id="respostas"> Na página "Sobre" encontrará informações sobre os desenvolvedores e seus contatos no github.</p>
             </details>
             
             <details>
-                <summary>Como posso contribuir?</summary>
-                <p>O site 14-Bits  é open source, então para contribuir é necessário estudar a documentação,
+                <summary id="perguntas">Como posso contribuir?</summary>
+                <p id="respostas">O site 14-Bits  é open source, então para contribuir é necessário estudar a documentação,
                    do projeto seguindo as diretirzes de contibuição. Depois, identifique problemas ou melhorias, 
-                   e faça modificações no código. Por fim, envie suas mudanças através de um pull request para revisão.
-                </p>
+                   e faça modificações no código. Por fim, envie suas mudanças através de um pull request para revisão.</p>
             </details>
             
         </section>
