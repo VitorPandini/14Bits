@@ -234,6 +234,7 @@ div img {
         font-size: 32px;
         padding: 10px 0;
         text-align: center;
+        text-transform: uppercase;
     }
 
     .sobre h2 {
