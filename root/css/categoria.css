@@ -153,6 +153,7 @@ h1 {
     font-family: 'montserrat', sans-serif;
     font-weight: 700;
     padding: 10px 10%;
+    text-transform: uppercase;
 }
 article p {
     text-align: center;
