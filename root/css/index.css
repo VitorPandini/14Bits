@@ -1,178 +1,180 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root {
-    --branco: #FFFFFF;
-    --laranja: #FF8800;
-    --amarelo: #FFD23F;
-    --verde: #75C200;
-    --verde-escuro: #003315;
-    --turquesa: #005054;
-    --azul: #00BAD6;
-    --azul-escuro: #1B1464;
-  }
+  --branco: #FFFFFF;
+  --laranja: #FF8800;
+  --amarelo: #FFD23F;
+  --verde: #75C200;
+  --verde-escuro: #003315;
+  --turquesa: #005054;
+  --azul: #00BAD6;
+  --azul-escuro: #1B1464;
+}
   
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-rendering: optimizeLegibility;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
 }
   
 body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--verde-escuro);
+  font-family: 'Roboto', sans-serif;
+  color: var(--verde-escuro);
 }
 
+/* Header/Cabeçalho */
+header {
+  background-color: var(--verde-escuro);
+  text-align: center;
+}
 
-body {
+/* Navbar/Menu de navegação */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: var(--verde-escuro);
+
+  img {
+    height: 50px;
+  }
+
+  a {
+    padding: 20px;
+    color: var(--branco);
+    text-decoration: none;
+    text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
-    color: var(--verde-escuro);
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.5s ease;
   }
-  
-  /* Header/Cabeçalho */
-  header {
-    background-color: var(--verde-escuro);
-    text-align: center;
+      
+  a:hover {
+    background-color: var(--turquesa);
+    color: var(--amarelo);
   }
-  
-  /* Navbar/Menu de navegação */
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    background-color: var(--verde-escuro);
-  
-    img {
-      height: 50px;
-    }
+}
 
-    @media (max-width: 1400px) {
-        nav {
-          justify-content: center;
-          padding: 30px 0;
-      
-          img {
-            height: 20px;
-          }
-        }
-      
-        section {
-          gap: 45px;
-        }
-      }
-      
-      /* Large breakpoints */
-      @media (max-width: 992px) {
-        nav a {
-          font-size: 16px;
-          padding: 15px;
-        }
-      
-        main {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-      
-        section {
-          display: flex;
-          flex-direction: column;
-          gap: 0;
-          padding-top: 10px;
-      
-          > div:first-child {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-          }
-      
-          > div,
-          > div:last-child  {
-            width: 100%;
-            padding: 20px;
-          }
-        }
-      }
-      
-      /* Medium breakpoint */
-@media (max-width: 768px) {
-        nav {
-          flex-direction: column;
-          padding: 10px 5px;
-      
-          a {
-            font-size: 16px;
-            padding: 10px;
-          }
-        }
-      
-        h1 { 
-          font-size: 28px;
-        }
-        h2, h3 {
-          font-size: 20px;
-        }
-      
-        button {
-          margin: 20px auto 0;
-          padding: 10px 15px;
-        }
-      
-        .separador,
-        footer {
-          position: static;
-        }
-      
-        footer  p {
-          font-size: 16px;
-        }
-      }
-      
-      /* Small breakpoint */
-@media (max-width: 576px) {
-        section > div:last-child {
-          display: grid;
-          grid-template-columns: 1fr;
-          gap: 1.2em;
-          width: 100%;
-      
-          /* Cards pares azuis e ímpares verdes */
-          article:nth-child(even) {
-            background-color: var(--azul);
-          }
-          article:nth-child(odd) {
-            background-color: var(--verde);
-          }
-        }
-      }
-  
-    a {
-      padding: 20px;
-      color: var(--branco);
-      text-decoration: none;
-      text-transform: uppercase;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      font-size: 18px;
-      transition: all 0.5s ease;
-    }
-    
-    a:hover {
-      background-color: var(--turquesa);
-      color: var(--amarelo);
-    }
+/* Conteúdo principal */
+#mapa-brasil {
+  display: block;
+  margin: 20px auto;
+  width: 850px;
+  max-width: 100vw;
+}
+
+aside {
+  display: inline-flex;
+  margin-left: 30px;
+  margin-bottom: 50px;
+
+  :first-child {
+    margin-right: 5px;
   }
+
+  img {
+    width: 40px;
+  }
+}
   
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
-    background-color: var(--verde-escuro);
-    color: var(--branco);
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: var(--verde-escuro);
+  color: var(--branco);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+@media (max-width: 1400px) {
+  nav {
+    justify-content: center;
+    padding: 30px 0;
+
+    img {
+      height: 20px;
+    }
   }
 
+  section {
+    gap: 45px;
+  }
+}
+
+/* Large breakpoints */
+@media (max-width: 992px) {
+  nav a {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-top: 10px;
+
+    > div:first-child {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    > div,
+    > div:last-child  {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+}
+      
+/* Medium breakpoint */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 10px 5px;
+
+    a {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+
+  h1 { 
+    font-size: 28px;
+  }
+  h2, h3 {
+    font-size: 20px;
+  }
+
+  button {
+    margin: 20px auto 0;
+    padding: 10px 15px;
+  }
+
+  .separador,
+  footer {
+    position: static;
+  }
+
+  footer  p {
+    font-size: 16px;
+  }
+}
+      
+/* Small breakpoint */
+@media (max-width: 576px) {
+
+}
