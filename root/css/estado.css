@@ -73,6 +73,7 @@ section {
   gap: 70px;
   justify-content: center;
   padding-top: 40px;
+  margin-bottom: 60px;
 
   /* Coluna esquerda */
   > div {
@@ -91,18 +92,18 @@ section {
 
     article {
       align-content: center;
+      background-color: var(--azul);
       padding: 20px;
+      cursor: pointer;
+      transition: all 0.5s ease;
     }
 
-    /* Cards 1º e último azuis */
-    article:first-child,
-    article:last-child {
-      background-color: var(--azul);
+    a > article:hover {
+      background-color: var(--amarelo);
     }
     
-    /* Cards 2º e 3º verdes */
-    article:nth-child(2),
-    article:nth-child(3) {
+    /* Cards pares verdes */
+    .card-verde {
       background-color: var(--verde);
     }
   }
@@ -133,14 +134,9 @@ h3 {
 
 a {
   font-size: 18px;
-  font-weight: 700;
   color: var(--azul-escuro);
   text-decoration: none;
   transition: all 0.5s ease;
-}
-
-a:hover {
-  color: var(--turquesa);
 }
 
 p {
@@ -201,7 +197,6 @@ footer {
 
   section {
     gap: 45px;
-    margin-bottom: 30px;
   }
 }
 
@@ -284,14 +279,6 @@ footer {
       grid-template-columns: 1fr;
       gap: 1.2em;
       width: 100%;
-
-      /* Cards pares azuis e ímpares verdes */
-      article:nth-child(even) {
-        background-color: var(--azul);
-      }
-      article:nth-child(odd) {
-        background-color: var(--verde);
-      }
     }
   }
 }
