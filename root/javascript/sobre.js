@@ -10,7 +10,7 @@ function validarCampo(campo, minLength) {
     campo.style.backgroundColor = 'red';
     return false;
   } else {
-    campo.style.backgroundColor = 'lightgreen';
+    campo.style.backgroundColor = '#75C200';
     return true;
   }
 }
@@ -35,7 +35,7 @@ function estilizarBorda(campo, cor) {
 
 // Adicionando eventos de foco e desfoco
 [inputNome, inputEmail, inputMensagem].forEach(campo => {
-  campo.addEventListener('focus', () => estilizarBorda(campo, 'lightblue'));
+  campo.addEventListener('focus', () => estilizarBorda(campo, '#FFD23F'));
   campo.addEventListener('blur', () => estilizarBorda(campo, ''));
 });
 

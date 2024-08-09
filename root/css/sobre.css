@@ -582,11 +582,6 @@ h1 {
 }
 
 /* Formulário */
-.error-message {
-    color: red;
-    display: none; /* Inicialmente oculta as mensagens de erro */
-}
-
 .contato02 {
     flex: 1;
 }
