@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 50px 10% 20px 10%;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 10px 10%;
+}
+
+.imagem {
+    max-width: 100%;
+    height: auto;
+    width: 600px; /* Ajuste o tamanho conforme necessário */
+    object-fit: cover;
+    padding: 10px;
+}
+
+.voltar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10%;
+    max-width: 100%;
+    height: auto;
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+}
+
+.voltar:hover {
+    transform: scale(1.1); 
+}
+
+
+/* Media Queries */
+
+/* Para telas de 1400px */
+@media (max-width: 1400px) {
+    h1 {
+        font-size: 35px;
+        padding: 40px 8% 15px 8%;
+    }
+    
+    p {
+        font-size: 18px;
+        padding: 8px 8%;
+    }
+    
+    .imagem {
+        width: 500px; /* Ajuste o tamanho conforme necessário */
+    }
+    
+    .voltar {
+        width: 90px; /* Ajuste o tamanho conforme necessário */
+    }
+}
+
+/* Para telas de 1050px */
+@media (max-width: 1050px) {
+    h1 {
+        font-size: 30px;
+        padding: 30px 6% 10px 6%;
+    }
+    
+    p {
+        font-size: 16px;
+        padding: 6px 6%;
+    }
+    
+    .imagem {
+        width: 400px; /* Ajuste o tamanho conforme necessário */
+    }
+    
+    .voltar {
+        width: 80px; /* Ajuste o tamanho conforme necessário */
+    }
+}
+
+/* Para telas de 768px */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 25px;
+        padding: 20px 5% 5px 5%;
+    }
+    
+    p {
+        font-size: 14px;
+        padding: 5px 5%;
+    }
+    
+    .imagem {
+        width: 300px; /* Ajuste o tamanho conforme necessário */
+    }
+    
+    .voltar {
+        width: 70px; /* Ajuste o tamanho conforme necessário */
+    }
+}
