@@ -150,7 +150,10 @@ main{
     align-items: center;
     font-size: 30px;
     cursor: pointer;
+   
 }
+
+
 
 #perguntas{
     color: var(--verde-escuro);
@@ -180,7 +183,7 @@ main{
 }
 
 footer {
-    position:relative;
+    position:static;
     bottom: 0;
     width: 100%;
     padding: 10px 0;

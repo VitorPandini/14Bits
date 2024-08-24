@@ -185,7 +185,7 @@ button:hover {
 
 /* Footer/Rodapé */
 footer {
-  position: fixed;
+  position: static;
   bottom: 0;
   width: 100%;
   padding: 10px 0;
@@ -285,7 +285,7 @@ footer {
 
   .separador,
   footer {
-    position: static;
+    position: fixed;
   }
 
   footer p {
