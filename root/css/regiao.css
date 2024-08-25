@@ -81,7 +81,7 @@ section {
     max-width: 630px;
   }
 
-  /* Coluna direita 
+  Coluna direita 
   >div:last-child {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -89,16 +89,12 @@ section {
     width: 50%;
     max-width: 630px;
 
-    article {
-      align-content: center;
-      padding: 20px;
-    }
 
     /* Cards 1º e último azuis */
     article:first-child,
     article:last-child {
       background-color: var(--azul);
-    }
+    }*/
 
     /* Cards 2º e 3º verdes */
     article:nth-child(2),
@@ -230,6 +226,7 @@ footer {
     flex-direction: column;
     gap: 0;
     padding-top: 10px;
+    margin: 25px;
 
     >div:first-child {
       display: flex;
