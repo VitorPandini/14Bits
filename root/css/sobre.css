@@ -795,6 +795,7 @@ footer {
     padding: 10px 0;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    position: static;
 }
 
 @media (max-width: 768px) {

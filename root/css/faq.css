@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: var(--verde-escuro);
+}
+
 :root {
     --branco: #FFFFFF;
     --laranja: #FF8800;
@@ -113,10 +117,9 @@ nav a:hover {
 
 /*Seção do site*/
 main{
-   
     height:max-content;
     position: relative;
-    background-color: var(--verde-escuro);      
+    margin-bottom: 5%;
 }
 
 #titulo{
@@ -150,7 +153,10 @@ main{
     align-items: center;
     font-size: 30px;
     cursor: pointer;
+   
 }
+
+
 
 #perguntas{
     color: var(--verde-escuro);
@@ -180,7 +186,7 @@ main{
 }
 
 footer {
-    position:relative;
+    position:fixed;
     bottom: 0;
     width: 100%;
     padding: 10px 0;

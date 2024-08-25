@@ -34,7 +34,7 @@ header {
 
 /* Navbar/Menu de navegação */
 nav {
-      display: flex;
+    display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
@@ -295,7 +295,7 @@ div img {
 /*-----------------------------------------------------------------------------------*/
 /* Footer/Rodapé */
 footer {
-    position: fixed;
+    position: static;
     bottom: 0;
     width: 100%;
     padding: 10px 0;
