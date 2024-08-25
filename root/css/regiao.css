@@ -285,7 +285,7 @@ footer {
 
   .separador,
   footer {
-    position: static;
+    position: fixed;
   }
 
   footer p {
@@ -325,8 +325,8 @@ footer {
 .section2 div h2 a {
   display: flex;
   justify-content: space-between;
-  margin: 10px;
-  padding: 10px;
+  margin: 15px;
+  padding: 15px;
   font-size: 18px;
   font-weight: 700;
 }
