@@ -57,7 +57,7 @@ nav {
   
   a:hover {
     background-color: var(--turquesa);
-    color: var(--amarelo);
+    /* color: var(--amarelo); */
   }
 }
 

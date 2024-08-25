@@ -1,26 +1,26 @@
-// Seleciona o Nav
-let elementoNav = document.querySelector("nav");
-
-// Adiciona uma classe para o Nav
-elementoNav.className ="nav-menu";
-
-// Aplica HTML do menu
-const conteudoNav = elementoNav.innerHTML= `
-<a href="./em-construcao.html">Norte</a>
-<a href="./em-construcao.html">Nordeste</a>
-<a href="./em-construcao.html">Centro-Oeste</a>
-<a href="./index.html"
-  ><img src="assets/images/14bits-nav-home.svg" alt="14-Bits"
-/></a>
-<a href="./regiao.html">Sudeste</a>
-<a href="./em-construcao.html">Sul</a>
-<a href="./sobre.html">Sobre</a>
-<a href="./faq.html">FAQ</a>
-`
 // Seleciona a imagem
 const elementoDivImg = document.querySelector(".img-gustavo");
 //Adiciona o estilo Border Radius em 50%
 elementoDivImg.style.borderRadius = '50%';
+
+// Efeito ao passar o mouse sobre a imagem
+document.addEventListener('DOMContentLoaded', () => {
+  const img = document.querySelector('.img-gustavo');
+
+  img.addEventListener('mouseover', () => {
+      // Aplicar os efeitos ao passar o mouse
+      img.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.5)';
+      img.style.transform = 'scale(1.1)';
+      img.style.filter = 'brightness(1.0) contrast(1.2)';
+  });
+
+  img.addEventListener('mouseout', () => {
+      // Remover os efeitos quando o mouse sai
+      img.style.boxShadow = 'none';
+      img.style.transform = 'scale(1)';
+      img.style.filter = 'none';
+  });
+});
 
 document.addEventListener('DOMContentLoaded', function(){
 
@@ -34,3 +34,15 @@ document.addEventListener('DOMContentLoaded', function(){
 
     })
 });
+
+// Adiciona o efeito no menu nav cor ao passar o mouser
+const navLinks = document.querySelectorAll('nav a');
+navLinks.forEach(link => {
+  link.addEventListener('mouseover', () => {
+    link.style.color = '#FFD23F'; // var(--amarelo)
+  });
+  link.addEventListener('mouseout', () => {
+    link.style.color = ''; // Voltar à cor original
+  });
+});
+
