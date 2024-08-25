@@ -41,12 +41,11 @@ p {
 }
 
 button {
-    background: none;
-    border: none;
-    padding: 0;
-    margin: 0;
+    all: unset;
     cursor: pointer;
-    outline: none;
+}
+button:focus {
+    outline: revert
 }
 
 .voltar {
