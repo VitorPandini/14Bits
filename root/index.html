@@ -21,10 +21,9 @@
         <a href="./faq.html">FAQ</a>
       </nav>
     </header>
-
     <!-- LETREIRO INFORMATIVO  -->
     <div>
-      <marquee behavior="alternate" direction="left" id="letreiro">APENAS A REGIÃO SUDESTE ESTÁ FUNCIONANDO, TODAS AS OUTRAS ESTÃO EM CONSTRUÇÃO!</marquee>
+        <marquee behavior="scroll" direction="up" id="letreiro" scrollamount = 2>APENAS A REGIÃO SUDESTE ESTÁ FUNCIONANDO, TODAS AS OUTRAS ESTÃO EM CONSTRUÇÃO! TODO O SITE AINDA ESTA EM CONSTRUÇÃO, NOS DESCULPEM :(</marquee>
     </div>
 
     <main>
@@ -32,7 +31,11 @@
         <article>
           <figure>
             <img id="mapa-brasil" src="./assets/images/brazil-map.svg" alt="Imagem do mapa do Brasil" viewBox="0 0 600 400">
-            <div id="info-sudeste" class="tooltip">Informações sobre a Região Sudeste</div>
+
+            <div id="info-sudeste" class="tooltip">
+              <strong>Informações sobre a Região Sudeste</strong>
+              <marquee behavior="alternate" direction="left">Nessa regiao contamos com grandes mudancas e com uma grande quantidade de pessoas relevantes sairam daqui.</marquee>
+            </div>
           </figure>
         </article>
       </section>
