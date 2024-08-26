@@ -60,6 +60,11 @@ nav a:hover {
     color: var(--amarelo);
   }
 
+  .disabled-link{
+    color: gray;
+    text-decoration: none;
+  }
+
 /* Media query NAV */
 @media (max-width: 1400px) {
     nav {
