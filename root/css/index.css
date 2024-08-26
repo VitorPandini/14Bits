@@ -75,6 +75,11 @@ nav {
   }
 }
 
+.disabled-link{
+  color: gray;
+  text-decoration: none;
+}
+
 /* Conteúdo principal */
 #mapa-brasil {
   display: block;

@@ -61,6 +61,11 @@ nav {
   }
 }
 
+.disabled-link{
+    color: gray;
+    text-decoration: none;
+  }
+
 /* Wrapper principal */
 main {
   padding: 40px 10;

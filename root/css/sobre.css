@@ -54,6 +54,11 @@ nav {
     }
 }
 
+.disabled-link{
+    color: gray;
+    text-decoration: none;
+  }
+
 /* Media query para smartphones */
 @media (max-width: 1400px) {
     nav {
