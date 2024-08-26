@@ -1,4 +1,4 @@
-let titulo = document.createElement("h1");
+let titulo = document.createElement("h2");
 
 // Manipulando o elemento
 titulo.id = "titulo";
@@ -10,19 +10,20 @@ let body = document.querySelector("body");
 // Adicionando o elemento 'titulo' no DOM
 body.appendChild(titulo);
 
+//Criando elemento texto//
 let texto = document.createElement("section");
 
 // Manipulando o elemento
 texto.innerHTML = `
+<h2> Região Sudeste </h2>
 <section>
- <p>A região Sudeste do Brasil é composta pelos estados de São Paulo, Rio de Janeiro, Minas Gerais e Espírito Santo. 
-    <br>É a mais industrializada e economicamente desenvolvida do país, abrigando importantes centros urbanos, culturais e financeiros. 
-    <br>Além disso, é um polo tecnológico com diversas startups, centros de inovação e grandes empresas de tecnologia.</p>
-    <p>Também, é considerada um polo de inovação e conectividade, com 58 das 100 cidades mais inteligentes e conectadas do país.
-    <br>O estado de São Paulo é considerado o estado com o maior potencial de inovação no Brasil, tanto no ranking geral quanto nos indicadores específicos. 
-    <br>Outras cidades da região que se destacam no desenvolvimento tecnológico e urbano são Niterói e Barueri.</p>
+ <p> O Índice FIEC de Inovação dos Estados revela que São Paulo é o estado com o maior potencial de inovação do Brasil, tanto no ranking geral quanto nos indicadores específicos.
+O Rio de Janeiro ocupa a quarta colocação.
+A região Sudeste também concentra empresas de software agrícola.
+O Estudo do Mercado Brasileiro de Software para o Agronegócio, coordenado pela Embrapa Informática Agropecuária (Campinas, SP), aponta, em levantamento inicial, que existem no País 114 empresas desenvolvedoras de software para uso no setor agrícola. De acordo com o estudo, 60% delas estão concentradas na região Sudeste, especialmente em São Paulo e Minas Gerais.
+Em segundo lugar, está a região Sul, com 25% das empresas.</p>
 </section>
 `;
 
 // Adicionando o elemento no dom
-body.appendChild(texto)
+body.appendChild(texto);
