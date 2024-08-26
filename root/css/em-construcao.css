@@ -40,12 +40,18 @@ p {
     padding: 10px;
 }
 
+button {
+    all: unset;
+    cursor: pointer;
+}
+button:focus {
+    outline: revert
+}
+
 .voltar {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 10%;
-    max-width: 100%;
     height: auto;
     width: 100px; /* Ajuste o tamanho conforme necessário */
 }

@@ -63,7 +63,12 @@ nav {
 
 /* Wrapper principal */
 main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1150px;
   padding: 40px 0;
+  margin: 0 auto;
 }
 
 /* Conteúdo principal */
@@ -77,34 +82,16 @@ section {
   /* Coluna esquerda */
   >div {
     align-content: center;
-    width: 30%;
     max-width: 630px;
   }
 
-  /* Coluna direita 
+  Coluna direita 
   >div:last-child {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.2em;
     width: 50%;
     max-width: 630px;
-
-    article {
-      align-content: center;
-      padding: 20px;
-    }
-
-    /* Cards 1º e último azuis */
-    article:first-child,
-    article:last-child {
-      background-color: var(--azul);
-    }
-
-    /* Cards 2º e 3º verdes */
-    article:nth-child(2),
-    article:nth-child(3) {
-      background-color: var(--verde);
-    }
   }
 }
 
@@ -138,8 +125,6 @@ h3 {
 a {
   display:flex;
   justify-content: space-between;
-  margin: ;
-  padding:;
   font-size: 18px;
   font-weight: 700;
   color: var(--azul-escuro);
@@ -185,7 +170,7 @@ button:hover {
 
 /* Footer/Rodapé */
 footer {
-  position: static;
+  position: fixed;
   bottom: 0;
   width: 100%;
   padding: 10px 0;
@@ -223,13 +208,15 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
   }
 
   section {
     display: flex;
     flex-direction: column;
     gap: 0;
-    padding-top: 10px;
+    padding-top: 0;
+    margin: 25px 25px 0;
 
     >div:first-child {
       display: flex;
@@ -240,7 +227,7 @@ footer {
     >div,
     >div:last-child {
       width: 100%;
-      padding: 20px;
+      padding: 15px;
     }
   }
 }
@@ -253,7 +240,6 @@ footer {
     margin-left: 10px 5px;
     list-style: none;
     margin-left: 16px;
-    }
 
     a {
       font-size: 16px;
@@ -268,8 +254,6 @@ footer {
  section{
     font-family: 'Roboto', sans-serif;
     color: var(--verde-escuro);
-    margin: 12px;
-    padding: 12px;
     font-size: 16px;
     
   }
@@ -300,33 +284,24 @@ footer {
     grid-template-columns: 1fr;
     gap: 1.2em;
     width: 100%;
-
-    /* Cards pares azuis e ímpares verdes */
-    /* Small breakpoint */
-      @media (max-width: 576px) {
-        .section2 {
-          display: grid;
-          grid-template-columns: 1fr;
-          gap: 1.2em;
-          width: 100%;
-        }
-    
- /* Cards pares azuis e ímpares verdes */
-  #card2, #card4 {
-  background-color: var(--azul);
- }
-    
-  #card1, #card3 {
-   background-color: var(--verde);
   }
- }
 }
 
-.section2 div h2 a {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-  padding: 10px;
-  font-size: 18px;
-  font-weight: 700;
+/* Small breakpoint */
+@media (max-width: 576px) {
+  .section2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2em;
+    max-width: 100%;
+  }
+  
+  .section2 div h2 a {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 700;
+    flex-direction: column;
+    text-align: center;
+  }
 }
