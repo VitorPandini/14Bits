@@ -23,7 +23,7 @@
     </header>
     <!-- LETREIRO INFORMATIVO  -->
     <div>
-        <marquee behavior="scroll" direction="up" id="letreiro" scrollamount = 2>APENAS A REGIÃO SUDESTE ESTÁ FUNCIONANDO, TODAS AS OUTRAS ESTÃO EM CONSTRUÇÃO! TODO O SITE AINDA ESTA EM CONSTRUÇÃO, NOS DESCULPEM :(</marquee>
+      <marquee behavior="scroll" direction="left" id="letreiro" scrollamount = 15>REGIÕES EM CONSTRUÇÃO, EXCETO SUDESTE! O SITE AINDA ESTÁ EM DESENVOLVIMENTO, NOS DESCULPEM :(</marquee>
     </div>
 
     <main>
@@ -32,12 +32,15 @@
           <figure>
             <img id="mapa-brasil" src="./assets/images/brazil-map.svg" alt="Imagem do mapa do Brasil" viewBox="0 0 100 100">
 
-            <div id="info-sudeste" class="tooltip">
-              <span>  
-                <strong>Informações sobre a Região Sudeste</strong>
-                Nessa regiao contamos com grandes mudancas e com uma grande quantidade de pessoas relevantes sairam daqui.
-              </span>
+
+            <div id="modal" class="tooltip modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <strong>Região Sudeste</strong>
+                <p>Nessa Região contamos com grandes mudanças, onde diversas pessoas relevantes saíram dela.</p>
+              </div>
             </div>
+            
           </figure>
         </article>
       </section>
@@ -60,5 +63,7 @@
     <footer>
       <p>&copy; 2024 14Bits. Todos os direitos reservados</p>
     </footer>
+
+    <script src="./js/index.js" defer></script>
   </body>
 </html>
