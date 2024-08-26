@@ -34,7 +34,7 @@ header {
 
 /* Navbar/Menu de navegação */
 nav {
-      display: flex;
+    display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
@@ -57,7 +57,7 @@ nav {
   
   a:hover {
     background-color: var(--turquesa);
-    color: var(--amarelo);
+    /* color: var(--amarelo); */
   }
 }
 
@@ -195,8 +195,8 @@ section {
     margin: 70px;
 }
 div img {
-    border-radius: 50%;
-    width: 20%;
+    /* border-radius: 50%;  */
+     width: 20%;
     height: auto;
     min-width: 200px;
 }
@@ -212,8 +212,8 @@ div img {
     margin: 0px;
     text-align: center;
     font-family: 'montserrat', sans-serif;
-    text-decoration: none;
-    font-weight: bold;
+    /* text-decoration: none; */
+    /* font-weight: bold; */
     color: var(--laranja);
     transition: all 0.5s ease;
 }

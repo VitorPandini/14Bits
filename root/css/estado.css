@@ -33,12 +33,20 @@ header {
 }
 
 /* Navbar/Menu de navegação */
+#nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 30px 10%;
-  background-color: var(--verde-escuro);
+  padding: 30px 0;
+  margin: 0 auto;
+  max-width: 1225px;
 
   img {
     height: 50px;
@@ -126,6 +134,7 @@ h1 {
 
 h2 {
   font-size: 32px;
+  margin-bottom: 30px;
 }
 
 h3 {
@@ -147,7 +156,6 @@ button {
   display: block;
   width: 100%;
   max-width: 200px;
-  margin-top: 30px;
   padding: 20px 30px;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
@@ -238,7 +246,7 @@ footer {
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
-    padding: 10px 5px;
+    padding: 30px 5px;
 
     a {
       font-size: 16px;
@@ -254,7 +262,7 @@ footer {
   }
 
   button {
-    margin: 20px auto 0;
+    margin: 0 auto;
     padding: 10px 15px;
   }
 
@@ -280,5 +288,42 @@ footer {
       gap: 1.2em;
       width: 100%;
     }
+  }
+}
+
+/* Botão de menu hambúrguer */
+#hamburger-btn {
+  display: none;
+  width: fit-content;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: var(--branco);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  transition: ease 0.5s all;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  #hamburger-btn {
+    display: block;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nav-links.active {
+    display: flex;
+  }
+
+  nav a {
+    padding: 10px;
+    width: 100%;
   }
 }
