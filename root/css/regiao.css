@@ -74,10 +74,10 @@ main {
 /* Conteúdo principal */
 section {
   display: flex;
-  flex-direction: row;
-  gap: 70px;
+  flex-direction: column;
+  gap: 20px;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 20px;
 
   /* Coluna esquerda */
   >div {
