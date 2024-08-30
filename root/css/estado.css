@@ -46,7 +46,7 @@ nav {
   align-items: center;
   padding: 30px 0;
   margin: 0 auto;
-  max-width: 1225px;
+  max-width: 1200px;
 
   img {
     height: 50px;
@@ -84,8 +84,9 @@ section {
   flex-direction: row;
   gap: 70px;
   justify-content: center;
+  max-width: 1200px;
   padding-top: 40px;
-  margin-bottom: 60px;
+  margin: 0 auto 60px;
 
   /* Coluna esquerda */
   > div {
@@ -104,6 +105,7 @@ section {
 
     article {
       align-content: center;
+      height: 100%;
       background-color: var(--azul);
       padding: 20px;
       cursor: pointer;
