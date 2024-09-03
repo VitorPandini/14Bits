@@ -78,6 +78,7 @@ main {
 
 /* Conteúdo principal */
 section {
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,6 +131,7 @@ h3 {
 
 a {
   display:flex;
+  flex-direction: row;
   justify-content: space-between;
   font-size: 18px;
   font-weight: 700;
@@ -220,7 +222,7 @@ footer {
 
   section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 0;
     padding-top: 0;
     margin: 25px 25px 0;
@@ -275,13 +277,19 @@ footer {
     padding: 10px 15px;
   }
 
-  .separador,
-  footer {
+  .separador, footer {
+    position: fixed;
+    padding: 8px;
+    margin-inline-end: auto ;
+  }
+ 
+  .separador {
     position: fixed;
   }
 
   footer p {
     font-size: 16px;
+    font-family: "Monserrat", "Roboto", sans-serif ;
   }
 }
 
@@ -297,19 +305,21 @@ footer {
 
 /* Small breakpoint */
 @media (max-width: 576px) {
-  .section2 {
+  .estados-sudeste {
+    /*flex-direction: row;*/
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.2em;
     max-width: 100%;
   }
   
-  .section2 div h2 a {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    font-size: 18px;
-    font-weight: 700;
+  .estados-sudeste div h2 a {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+   text-align:start;
+   font-size: 16px;
+   font-weight: 700;
    
   }
 }
