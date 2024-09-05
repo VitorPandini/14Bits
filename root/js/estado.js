@@ -1,13 +1,3 @@
-/* Toggle pro menu de hambúrguer mobile */
-document.addEventListener('DOMContentLoaded', function () {
-  const hamburgerBtn = document.getElementById('hamburger-btn');
-  const navLinks = document.getElementById('nav-links');
-
-  hamburgerBtn.addEventListener('click', function () {
-    navLinks.classList.toggle('active'); // Alterna a classe 'active' no contêiner de links de navegação
-  });
-});
-
 /* Função pra renderizar cards verdes dinamicamente */
 function atualizaCardVerde() {
   const cards = document.querySelectorAll('a > article'); // Seleciona os <article> dentro de <a>, ou seja, os cards

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="css/regiao.css">
 
     <title>Região Sudeste | 14Bits</title>
@@ -15,16 +16,22 @@
     <header>
         <!-- Menu de navegação -->
         <nav>
-                <a href="./em-construcao.html" class="disabled-link">Norte</a>
-                <a href="./em-construcao.html" class="disabled-link">Nordeste</a>
-                <a href="./em-construcao.html" class="disabled-link" >Centro-Oeste</a>
-                <a href="./index.html"><img src="assets/images/14bits-nav-home.svg" alt="14-Bits"></a>
-                <a href="./regiao.html">Sudeste</a>
-                <a href="./em-construcao.html" class="disabled-link">Sul</a>
-                <a href="./sobre.html">Sobre</a>
-                <a href="./faq.html">FAQ</a>
+          <!-- Contêiner de links de navegação -->
+          <div id="nav-links">
+              <a href="./em-construcao.html" class="disabled-link">Norte</a>
+              <a href="./em-construcao.html" class="disabled-link">Nordeste</a>
+              <a href="./em-construcao.html" class="disabled-link" >Centro-Oeste</a>
+              <a href="./index.html" id="logo"><img src="assets/images/14bits-nav-home.svg" alt="14-Bits"></a>
+              <a href="./regiao.html">Sudeste</a>
+              <a href="./em-construcao.html" class="disabled-link">Sul</a>
+              <a href="./sobre.html">Sobre</a>
+              <a href="./faq.html">FAQ</a>
+          </div>
+          
+          <!-- Botão de hambúrguer -->
+          <button id="hamburger-btn" aria-label="Alterna navegação">&#9776;</button>
         </nav>
-    </header>
+      </header>
 
     <main>
         <h1>Região Sudeste</h1>
@@ -52,6 +59,7 @@
         <p>&copy; 2024 14Bits. Todos os direitos reservados</p>
     </footer>
 
+    <script src="./js/navbar.js" defer></script>
     <script src="./js/regiao.js" defer></script>
 </body>
 

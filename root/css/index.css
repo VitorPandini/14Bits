@@ -38,52 +38,13 @@ body {
   white-space: nowrap;
 }
 
-/* Header/Cabeçalho */
-header {
-  background-color: var(--verde-escuro);
-  text-align: center;
-}
-
-/* Navbar/Menu de navegação */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 10%;
-  background-color: var(--verde-escuro);
-
-  img {
-    height: 50px;
-  }
-
-  a {
-    padding: 20px;
-    color: var(--branco);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    transition: all 0.5s ease;
-  }
-      
-  a:hover {
-    background-color: var(--turquesa);
-    color: var(--amarelo);
-  }
-}
-
-.disabled-link{
-  color: gray;
-  text-decoration: none;
-}
-
 /* Conteúdo principal */
 #mapa-brasil {
   display: block;
   margin: 20px auto;
   width: 750px;
   max-width: 100vw;
+  cursor: pointer;
 }
 
 aside {
@@ -101,28 +62,6 @@ aside {
 
 }
 
-#mapa-brasil {
-  display: block;
-  margin: 20px auto;
-  width: 850px;
-  max-width: 100vw;
-  cursor: pointer;
-}
-
-aside {
-  display: inline-flex;
-  margin-left: 30px;
-  margin-bottom: 50px;
-}
-
-aside:first-child {
-  margin-right: 5px;
-}
-
-aside img {
-  width: 40px;
-}
-
 .tooltip {
   display: none;
   position: relative;
@@ -138,13 +77,12 @@ aside img {
   display: inline-block;
 }
 
-
 /* Modal (fundo) */
 .modal {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 40vh;
+  padding-top: 50vh;
   left: 0;
   top: 0;
   width: 100%;
@@ -193,15 +131,6 @@ footer {
 }
 
 @media (max-width: 1400px) {
-  nav {
-    justify-content: center;
-    padding: 30px 0;
-
-    img {
-      height: 20px;
-    }
-  }
-
   section {
     gap: 45px;
   }
@@ -209,11 +138,6 @@ footer {
 
 /* Large breakpoints */
 @media (max-width: 992px) {
-  nav a {
-    font-size: 16px;
-    padding: 15px;
-  }
-
   main {
     display: flex;
     flex-direction: column;
@@ -242,16 +166,6 @@ footer {
       
 /* Medium breakpoint */
 @media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    padding: 10px 5px;
-
-    a {
-      font-size: 16px;
-      padding: 10px;
-    }
-  }
-
   h1 { 
     font-size: 28px;
   }
@@ -259,22 +173,7 @@ footer {
     font-size: 20px;
   }
 
-  button {
-    margin: 20px auto 0;
-    padding: 10px 15px;
-  }
-
-  .separador,
-  footer {
-    position: static;
-  }
-
   footer  p {
     font-size: 16px;
   }
-}
-      
-/* Small breakpoint */
-@media (max-width: 576px) {
-
 }

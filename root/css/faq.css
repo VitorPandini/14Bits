@@ -23,108 +23,11 @@ body {
   }
 
 /*-----------------------------------------------------------------------------------*/
-/* Header */
-header {
-    background-color: var(--verde-escuro);
-    text-align: center;
-}
-
-/* Menu de navegação */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 10%;
-    background-color: var(--verde-escuro);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-}
-
-    img {
-        height: 50px;
-    }
-
-nav a {
-    padding: 20px;
-    color: var(--branco);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    transition: all 0.5s ease;
-  }
-
-nav a:hover {
-    background-color: var(--turquesa);
-    color: var(--amarelo);
-  }
-
-  .disabled-link{
-    color: gray;
-    text-decoration: none;
-  }
-
-/* Media query NAV */
-@media (max-width: 1400px) {
-    nav {
-      justify-content: center;
-      padding: 30px 0;
-      gap: 20px;
-      
-      a {
-        font-size: 16px;
-        padding: 10px;
-      }
-      img {
-        height: 30px;
-      }
-
-    }
-}
-
-@media (max-width: 1050px) {
-    nav {
-        justify-content: center;
-        padding: 15px 0;
-        gap: 10px;
-    }
-
-    nav a {
-        font-size: 16px;
-        padding: 10px;
-    }
-
-    nav img {
-        height: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    nav {
-      flex-direction: column;
-      padding: 10px 5px;
-      gap: 0;
-  
-      a {
-        font-size: 16px;
-        padding: 10px;
-      }
-
-      img {
-        height: 20px;
-      }
-
-    }
-}
-
-/*-------------------------------------------------------*/
-
 /*Seção do site*/
 main{
     height:max-content;
     position: relative;
-    margin-bottom: 5%;
+    margin-bottom: 35px;
 }
 
 #titulo{
@@ -139,7 +42,7 @@ main{
 
 }
 
-#subtitulo{
+#subtitulo {
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
@@ -150,7 +53,7 @@ main{
     color:var(--branco);
 }
 
-.conteudo details summary{
+.conteudo details summary {
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
@@ -161,9 +64,7 @@ main{
    
 }
 
-
-
-#perguntas{
+#perguntas {
     color: var(--verde-escuro);
     height: 60px;
     display: flex;
@@ -177,7 +78,7 @@ main{
     
 }
 
-#respostas{
+#respostas {
     font-family:'Roboto', sans-serif;
     color: var(--azul-escuro);
     background-color: rgba(248, 248, 248, 0.6);
@@ -202,12 +103,11 @@ footer {
     font-size: 18px;
   }
 
-/* MediaS query para telas menores */
+/* Media query para telas menores */
 
 /*-------- PRIMEIRO TAMANHO DE TELA-----------*/
 
 @media (max-width: 1400px) {
-   
     #titulo {
         font-size: 30px;
     }
@@ -225,8 +125,6 @@ footer {
         font-size: 15px;
         margin-left: 300px;
         margin-right: 300px;
-      
-
     }
 
 }
@@ -239,7 +137,7 @@ footer {
         font-size: 25px;
     }
     #subtitulo {
-        font-size: 12px;
+        font-size: 16px;
     }
     #perguntas {
         text-align: center;
@@ -249,26 +147,25 @@ footer {
         height: 40px;
     }
     #respostas {
-        font-size: 12px;
+        font-size: 16px;
         margin-left: 150px;
         margin-right: 150px;
        
     }
     footer {
-    font-size: 12px;
-  }
+        font-size: 16px;
+    }
 
 }
 
 /*-------- TERCEIRO TAMANHO DE TELA-----------*/
 
 @media (max-width: 768px) {
-
     #titulo {
         font-size: 25px;
     }
     #subtitulo {
-        font-size: 12px;
+        font-size: 16px;
     }
     #perguntas {
         text-align: center;
@@ -279,40 +176,32 @@ footer {
         
     }
     #respostas {
-        font-size: 12px;
+        font-size: 16px;
         margin-left: 150px;
         margin-right: 150px;
-       
     }
-
 }
 
 /*-------- QUARTO TAMANHO DE TELA-----------*/
 
 @media (max-width: 600px) {
-
     #titulo {
         font-size: 20px;
     }
     #subtitulo {
-        font-size: 12px;
+        font-size: 16px;
     }
     #perguntas {
         text-align: center;
-        font-size: 12px;
+        font-size: 16px;
         margin-left: 50px;
         margin-right: 50px;
         height: 50px;
     }
     #respostas {
-        font-size: 10px;
+        font-size: 16px;
         margin-left: 50px;
         margin-right: 50px;
        
     }
-    footer {
-        font-size: 8px;
-      }
-
 }
-
