@@ -7,7 +7,7 @@ var mapa = document.getElementById("mapa-brasil");
 var span = document.getElementsByClassName("close")[0];
 
 // Ao passar por cima do mapa, abre o modal
-mapa.onmouseover = function() {
+mapa.onclick = function() {
   modal.style.display = "block";
 }
 
