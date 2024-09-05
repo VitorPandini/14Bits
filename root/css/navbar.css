@@ -3,6 +3,9 @@ header {
   background-color: var(--verde-escuro);
   text-align: center;
 }
+.show-mobile {
+  display: none;
+}
 
 /* Começo Navbar */
 #nav-links {
@@ -109,6 +112,10 @@ body.no-scroll {
     }
   }
 
+  .show-mobile {
+    display: block;
+  }
+
   #hamburger-btn {
     display: block;
     margin: 0 auto;
@@ -129,6 +136,9 @@ body.no-scroll {
   
   /* Logo no navbar aberto */
   #logo {
+    display: none;
+  }
+  .show-mobile {
     position: absolute;
     top: 15px;
     left: 15px;
