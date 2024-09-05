@@ -29,10 +29,12 @@ body {
 /*Letreiro abaixo do Header*/
 
 #letreiro{
+  display: flex;
+  align-items: center;
   height: 35px;
   padding: 12px;
   background-color: black;
-  font-family: "Pixelify Sans", sans-serif;  
+  font-family: "Pixelify Sans", sans-serif;
   font-size: 20px;
   color: var(--amarelo);
   white-space: nowrap;
@@ -42,8 +44,8 @@ body {
 #mapa-brasil {
   display: block;
   margin: 20px auto;
-  width: 750px;
-  max-width: 100vw;
+  width: 650px;
+  max-width: 100%;
   cursor: pointer;
 }
 
@@ -142,13 +144,15 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width:  calc(100vw - 40px);
+    margin: 0 auto 50px;
   }
 
   section {
     display: flex;
     flex-direction: column;
     gap: 0;
-    padding-top: 10px;
 
     > div:first-child {
       display: flex;
@@ -161,6 +165,10 @@ footer {
       width: 100%;
       padding: 20px;
     }
+  }
+
+  aside {
+    margin: 0;
   }
 }
       
@@ -175,5 +183,12 @@ footer {
 
   footer  p {
     font-size: 16px;
+  }
+}
+
+/* Small breakpoint */
+@media (max-width: 576px) {
+  footer {
+    position: fixed;
   }
 }

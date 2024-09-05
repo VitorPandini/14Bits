@@ -31,6 +31,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: calc(100% - 50px);
   max-width: 1150px;
   padding: 40px 0;
   margin: 0 auto;
@@ -41,23 +42,30 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
   justify-content: center;
   padding-top: 20px;
+}
 
-  /* Coluna esquerda */
-  >div {
-    align-content: center;
-    max-width: 630px;
+section.estados-sudeste {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: 700px;
+  gap: 10px;
+
+  div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    text-transform: uppercase;
+    background-color: var(--azul);
+    cursor: pointer;
+    transition: all 0.5s ease;
   }
-
-  Coluna direita 
-  >div:last-child {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.2em;
-    width: 50%;
-    max-width: 630px;
+  
+  div:hover {
+    background-color: var(--amarelo);
   }
 }
 
@@ -129,9 +137,7 @@ footer {
 
 /* XXL breakpoint */
 @media (max-width: 1400px) {
-  section {
-    gap: 45px;
-  }
+
 }
 
 /* Large breakpoints */
@@ -140,7 +146,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
   }
 
   section {
@@ -148,25 +153,18 @@ footer {
     flex-direction: column;
     gap: 0;
     padding-top: 0;
-    margin: 25px 25px 0;
-
-    >div:first-child {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    }
-
-    >div,
-    >div:last-child {
-      width: 100%;
-      padding: 15px;
-      justify-content: center;
-    }
+    margin-top: 25px;
   }
 }
 
 /* Medium breakpoint */
 @media (max-width: 768px) {
+  section.estados-sudeste {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: calc(100% - 50px);
+  }
   h1 {
     font-size: 28px;
   }
@@ -193,7 +191,7 @@ footer {
   }
  
   .separador {
-    position: fixed;
+    position: static;
   }
 
   footer {
@@ -207,16 +205,9 @@ footer {
 
 /* Small breakpoint */
 @media (max-width: 576px) {
-  section>div:last-child {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.2em;
-    width: 100%;
+  main {
+    margin-bottom: 0;
   }
-}
-
-/* Small breakpoint */
-@media (max-width: 576px) {
   .estados-sudeste {
     /*flex-direction: row;*/
     display: grid;
