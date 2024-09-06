@@ -75,12 +75,15 @@ main{
     margin-bottom: 10px;
     border-radius: 10px;
     font-family: 'Montserrat', 'Roboto', sans-serif;
+    padding: 10px;
+    min-height: 50px;
     
 }
 
 #respostas {
     font-family:'Roboto', sans-serif;
-    color: var(--azul-escuro);
+    color: var(--verde-escuro);
+    font-size: 18px;
     background-color: rgba(248, 248, 248, 0.6);
     font-size: 20px;
     text-align: justify;
@@ -88,6 +91,8 @@ main{
     margin-right: 250px;
     padding: 20px;
     border-radius: 10px;
+    line-height: 1.5px;
+   
     
 }
 
@@ -112,17 +117,17 @@ footer {
         font-size: 30px;
     }
     #subtitulo {
-        font-size: 15px;
+        font-size: 18px;
     }
     #perguntas {
         text-align: center;
-        font-size: 20px;
+        font-size: 18px;
         margin-left: 300px;
         margin-right: 300px;
         height: 70px;
     }
     #respostas {
-        font-size: 15px;
+        font-size: 18px;
         margin-left: 300px;
         margin-right: 300px;
     }
