@@ -1,21 +1,30 @@
-// Criando subtítulo e atribuindo conteúdo
-let subtitulo = document.createElement("h2");
-subtitulo.id = "região-sudeste";
+/* Função pra renderizar cards verdes dinamicamente */
+function atualizaCardVerde() {
+  const cards = document.querySelectorAll('section > div'); // Seleciona os <div> dentro de <section>, ou seja, os cards
+  const larguraTela = window.innerWidth; // Largura atual da janela
 
-// Criando parágrafo e atribuindo conteúdo
-let paragrafo = document.createElement("p");
-paragrafo.innerText = `A região Sudeste do Brasil é composta pelos estados de São Paulo, Rio de Janeiro, Minas Gerais e Espírito Santo. É a mais industrializada e economicamente desenvolvida do país, abrigando importantes centros urbanos, culturais e financeiros. E é considerada uma das mais desenvolvidas tecnologicamente do Brasil, juntamente com a região Sul. Segundo o Ranking Connected Smart Cities, 58 das 100 cidades mais inteligentes e conectadas do país estão localizadas na região Sudeste.
+  // Remove as classes 'card-verde' pra começar
+  cards.forEach(card => card.classList.remove('card-verde'));
 
-Além disso, é um polo tecnológico com diversas startups, centros de inovação e grandes empresas de tecnologia. A região Sudeste também é a mais rica do Brasil e possui a maior concentração populacional do país. A industrialização do país teve início na região Sudeste, e o estado de São Paulo é o principal centro industrial do Brasil.
+  if (larguraTela <= 576) {
+    // Em telas menores, aplica 'card-verde' em cards com índice ímpar, com início em índice 0
+    cards.forEach((card, indice) => {
+      if (indice % 2 === 0) {
+        card.classList.add('card-verde');
+      }
+    });
+  } else {
+    // Em telas maiores, aplica 'card-verde' em cards divisíveis por 4, com início em índice 0
+    cards.forEach((card, indice) => {
+      if (indice % 3 === 0) {
+        card.classList.add('card-verde');
+      }
+    });
+  }
+}
 
-Alguns dos ramos industriais mais importantes da região Sudeste são: Automobilística, Siderúrgica, Petroquímica, Naval, Petrolífera. Concentram-se 70% das despesas com desenvolvimento de tecnologias realizadas pelas empresas brasileiras. Somando-se as regiões Sudeste e Sul, esse percentual eleva-se para 90% (Braga e Matesco, 1986).
+// Chama a função ao carregar a página
+atualizaCardVerde();
 
-Clique nos links abaixo para descobrir mais sobre os estados da região Sudeste.`;
-
-// Selecionando e adicionando elementos no DOM
-let section = document.getElementById("regiao-sudeste");
-section.appendChild(subtitulo);
-section.appendChild(paragrafo);
-
-
-
+// Chama a função quando muda a largura da página
+window.addEventListener('resize', atualizaCardVerde);

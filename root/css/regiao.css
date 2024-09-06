@@ -35,10 +35,6 @@ main {
   max-width: 1150px;
   padding: 40px 0;
   margin: 0 auto;
-
-  .card-verde {
-    background-color: var(--verde) !important;
-  }
 }
 
 /* Conteúdo principal */
@@ -68,6 +64,10 @@ section.estados-sudeste {
     background-color: var(--azul);
     cursor: pointer;
     transition: all 0.5s ease;
+  }
+
+  div.card-verde {
+    background-color: var(--verde);
   }
   
   div:hover {
