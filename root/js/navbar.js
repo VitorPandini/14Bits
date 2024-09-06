@@ -20,3 +20,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+/* Esconde o menu de navegação em janelas maiores que 768px */
+window.addEventListener('resize', function () {
+  const nav = document.getElementsByTagName('nav')[0];
+  const linksWrapper = document.getElementById('nav-links');
+
+  if (window.innerWidth > 768) {
+    nav.classList.remove('open');
+    linksWrapper.classList.remove('active');
+  }
+});
