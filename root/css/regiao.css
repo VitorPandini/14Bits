@@ -55,22 +55,23 @@ section.estados-sudeste {
   max-width: 700px;
   gap: 10px;
 
-  div {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  a {
     padding: 20px;
+    text-align: center;
+    text-decoration: none;
     text-transform: uppercase;
+    color: var(--azul-escuro);
     background-color: var(--azul);
     cursor: pointer;
     transition: all 0.5s ease;
   }
 
-  div.card-verde {
+  a.card-verde {
     background-color: var(--verde);
   }
   
-  div:hover {
+  a:hover {
+    color: var(--turquesa);
     background-color: var(--amarelo);
   }
 }
@@ -94,27 +95,8 @@ h1 {
   text-transform: uppercase;
 }
 
-h2 {
-  font-size: 32px;
-}
-
 h3 {
   margin-bottom: 10px;
-}
-
-h2 a {
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--azul-escuro);
-  text-decoration: none;
-  transition: all 0.5s ease;
-}
-
-a:hover {
-  color: var(--turquesa);
 }
 
 p {
@@ -164,12 +146,6 @@ footer {
 
 /* Medium breakpoint */
 @media (max-width: 768px) {
-  /* section.estados-sudeste {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-    max-width: calc(100% - 50px);
-  } */
   h1 {
     font-size: 28px;
   }

@@ -1,6 +1,6 @@
 /* Função pra renderizar cards verdes dinamicamente */
 function atualizaCardVerde() {
-  const cards = document.querySelectorAll('section > div'); // Seleciona os <div> dentro de <section>, ou seja, os cards
+  const cards = document.querySelectorAll('section > a'); // Seleciona os <div> dentro de <section>, ou seja, os cards
   const larguraTela = window.innerWidth; // Largura atual da janela
 
   // Remove as classes 'card-verde' pra começar
