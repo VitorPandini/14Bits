@@ -121,7 +121,7 @@ h1 {
     }
 
     .sobre p {
-        font-size: 14px;
+        font-size: 18px;
         line-height: 28px;
     }
 
@@ -420,7 +420,7 @@ h1 {
     }
 
     .desenvolvedores p {
-        font-size: 14px;
+        font-size: 18px;
         line-height: 20px;
         padding: 0 10%;
     }
@@ -439,7 +439,7 @@ h1 {
     }
 
     .desenvolvedor01 p, .desenvolvedor02 p, .desenvolvedor03 p, .desenvolvedor04 p, .desenvolvedor05 p, .desenvolvedor06 p {
-        font-size: 14px;
+        font-size: 18px;
         padding: 5px 15px;
     }
 
@@ -579,7 +579,7 @@ h1 {
     }
 
     .contato01 p {
-        font-size: 14px;
+        font-size: 18px;
         line-height: 20px;
     }
 
@@ -594,7 +594,7 @@ h1 {
     }
 
     .contato02 label {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .contato02 button {
@@ -688,7 +688,7 @@ h1 {
     }
 
     .repositorio p {
-        font-size: 14px;
+        font-size: 18px;
         font-weight: 500;
         line-height: 20px;
         text-align: center;
@@ -710,6 +710,6 @@ footer {
 
 @media (max-width: 768px) {
     footer {
-        font-size: 14px;
+        font-size: 18px;
     }
 }
