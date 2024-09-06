@@ -26,8 +26,26 @@ body {
   color: var(--verde-escuro);
 }
 
-/*Letreiro abaixo do Header*/
+/* Seção principal */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 220px);
+  max-width: calc(100vw - 90px);
+  margin: 0 auto;
+}
 
+/* Conteúdo principal */
+#mapa-brasil {
+  display: block;
+  width: 600px;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+/*Letreiro abaixo do Header*/
 #letreiro{
   display: flex;
   align-items: center;
@@ -40,30 +58,26 @@ body {
   white-space: nowrap;
 }
 
-/* Conteúdo principal */
-#mapa-brasil {
-  display: block;
-  margin: 20px auto;
-  width: 650px;
-  max-width: 100%;
-  cursor: pointer;
-}
-
+/* Redes Sociais */
 aside {
   display: inline-flex;
-  margin-left: 30px;
-  margin-bottom: 50px;
+  position: absolute;
+  bottom: 60px;
+  left: 45px;
 
   :first-child {
     margin-right: 5px;
   }
 
   img {
-    width: 40px;
+    width: 60px;
   }
-
+  img:hover{
+    transform: scale(1.1); 
+  }
 }
 
+/* Tooltip com modal */
 .tooltip {
   display: none;
   position: relative;
@@ -119,9 +133,10 @@ aside {
   text-decoration: none;
   cursor: pointer;
 }
-  
+
+/* Footer */
 footer {
-  position: static;
+  position: fixed;
   bottom: 0;
   width: 100%;
   padding: 10px 0;
@@ -132,23 +147,8 @@ footer {
   font-size: 18px;
 }
 
-@media (max-width: 1400px) {
-  section {
-    gap: 45px;
-  }
-}
-
-/* Large breakpoints */
+/* Large breakpoint */
 @media (max-width: 992px) {
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width:  calc(100vw - 40px);
-    margin: 0 auto 50px;
-  }
-
   section {
     display: flex;
     flex-direction: column;
@@ -166,29 +166,30 @@ footer {
       padding: 20px;
     }
   }
-
-  aside {
-    margin: 0;
-  }
 }
       
 /* Medium breakpoint */
 @media (max-width: 768px) {
-  h1 { 
-    font-size: 28px;
+  main {
+    height: calc(100vh - 132px);
+    justify-content: center;
   }
-  h2, h3 {
-    font-size: 20px;
-  }
-
-  footer  p {
-    font-size: 16px;
+  aside {
+    img {
+      width: 40px;
+    }
   }
 }
 
 /* Small breakpoint */
 @media (max-width: 576px) {
+  aside {
+    bottom: 50px;
+    left: 20px;
+  }
+
   footer {
     position: fixed;
+    font-size: 14px;
   }
 }
