@@ -68,6 +68,7 @@ h1 {
 article p {
     text-align: center;
 }
+
 h2 {
     margin: 0px;
     text-align: center;
@@ -114,7 +115,7 @@ div img.img-gustavo {
 
 .conteudo p {
     padding: 5px 0;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
     font-family: 'Roboto', sans-serif;
 }
@@ -153,7 +154,7 @@ div img.img-gustavo {
     }
 
     .sobre p {
-        font-size: 14px;
+        /* font-size: 18px; */
         line-height: 28px;
     }
 
