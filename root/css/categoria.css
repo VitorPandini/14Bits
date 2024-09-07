@@ -101,13 +101,15 @@ h2 {
 }
 
 section {
-    padding: 20px 20px;
-    margin: 70px;
+    padding: 10px 40px;
+    margin: auto;
+
 }
 div img.img-gustavo {
      width: 20%;
     height: auto;
     min-width: 200px;
+    padding: 20px;
 }
 
 .conteudo p {
@@ -121,14 +123,14 @@ div img.img-gustavo {
     margin: 0px;
     text-align: center;
     font-family: 'montserrat', sans-serif;
-    /* text-decoration: none; */
-    /* font-weight: bold; */
+    text-decoration: none;
+    font-weight: bold;
     color: var(--laranja);
     transition: all 0.5s ease;
 }
 .conteudo   a:hover {
-    background-color: var(--turquesa);
-    color: var(--amarelo);
+    /* background-color: var(--turquesa); */
+    color: var(--azul);
     
   }
 
@@ -151,7 +153,7 @@ div img.img-gustavo {
     }
 
     .sobre p {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 28px;
     }
 
@@ -181,24 +183,28 @@ div img.img-gustavo {
     .sobre h2 {
         font-size: 1.5em;
         padding: 5px 0;
+        text-align: justify;
     }
 
     .sobre p {
         font-size: 14px;
         line-height: 28px;
+        
     }
 
     .sobre img {
         width: 100%;
         height: auto;
+    
     }
 
     .barra-colorida {
         padding: 10px 10%;
     }
 
-    section {
-        margin: 0;
+    .img-gustavo {
+        margin-left: 10px;
+        
     }
 }
 /*-----------------------------------------------------------------------------------*/
