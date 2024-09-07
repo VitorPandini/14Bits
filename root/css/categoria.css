@@ -189,6 +189,15 @@ footer {
   }
 
 @media (max-width: 576px) {
+    .img-wrapper {
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    img.img-gustavo {
+        margin: 0;
+    }
     footer {
         font-size: 16px;
         position: static;
