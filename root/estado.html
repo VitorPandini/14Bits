@@ -23,6 +23,7 @@ Responsável desta página: Emily Matias
 
   <!-- Links CSS -->
   <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./css/navbar.css">
   <link rel="stylesheet" href="css/estado.css">
 </head>
 <body>
@@ -30,16 +31,18 @@ Responsável desta página: Emily Matias
   <header>
     <!-- Menu de navegação -->
     <nav>
+      <a href="./index.html" class="show-mobile"><img src="assets/images/14bits-nav-home.svg" alt="14-Bits"></a>
+
       <!-- Contêiner de links de navegação -->
       <div id="nav-links">
-          <a href="./em-construcao.html" class="disabled-link">Norte</a>
-          <a href="./em-construcao.html" class="disabled-link">Nordeste</a>
-          <a href="./em-construcao.html" class="disabled-link" >Centro-Oeste</a>
-          <a href="./index.html"><img src="assets/images/14bits-nav-home.svg" alt="14-Bits"></a>
-          <a href="./regiao.html">Sudeste</a>
-          <a href="./em-construcao.html" class="disabled-link">Sul</a>
-          <a href="./sobre.html">Sobre</a>
-          <a href="./faq.html">FAQ</a>
+        <a href="./em-construcao.html" class="disabled-link">Norte</a>
+        <a href="./em-construcao.html" class="disabled-link">Nordeste</a>
+        <a href="./em-construcao.html" class="disabled-link" >Centro-Oeste</a>
+        <a href="./index.html" id="logo"><img src="assets/images/14bits-nav-home.svg" alt="14-Bits"></a>
+        <a href="./regiao.html">Sudeste</a>
+        <a href="./em-construcao.html" class="disabled-link">Sul</a>
+        <a href="./sobre.html">Sobre</a>
+        <a href="./faq.html">FAQ</a>
       </div>
       
       <!-- Botão de hambúrguer -->
@@ -106,6 +109,7 @@ Responsável desta página: Emily Matias
     <p>&copy; 2024 14Bits. Todos os direitos reservados</p>
   </footer>
   
+  <script src="./js/navbar.js" defer></script>
   <script src="./js/estado.js" defer></script>
 </body>
 </html>

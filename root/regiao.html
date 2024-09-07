@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="css/regiao.css">
 
     <title>Região Sudeste | 14Bits</title>
@@ -15,49 +16,55 @@
     <header>
         <!-- Menu de navegação -->
         <nav>
+            <a href="./index.html" class="show-mobile"><img src="assets/images/14bits-nav-home.svg" alt="14-Bits"></a>
+
+            <!-- Contêiner de links de navegação -->
+            <div id="nav-links">
                 <a href="./em-construcao.html" class="disabled-link">Norte</a>
                 <a href="./em-construcao.html" class="disabled-link">Nordeste</a>
                 <a href="./em-construcao.html" class="disabled-link" >Centro-Oeste</a>
-                <a href="./index.html"><img src="assets/images/14bits-nav-home.svg" alt="14-Bits"></a>
+                <a href="./index.html" id="logo"><img src="assets/images/14bits-nav-home.svg" alt="14-Bits"></a>
                 <a href="./regiao.html">Sudeste</a>
                 <a href="./em-construcao.html" class="disabled-link">Sul</a>
                 <a href="./sobre.html">Sobre</a>
                 <a href="./faq.html">FAQ</a>
+            </div>
+            
+            <!-- Botão de hambúrguer -->
+            <button id="hamburger-btn" aria-label="Alterna navegação">&#9776;</button>
         </nav>
-    </header>
+      </header>
 
     <main>
         <h1>Região Sudeste</h1>
         <section id="regiao-sudeste">
-            <p>A região Sudeste do Brasil é composta pelos estados de São Paulo, Rio de Janeiro, Minas Gerais e Espírito
-                Santo.
-                <br>É a mais industrializada e economicamente desenvolvida do país, abrigando importantes centros
-                urbanos, culturais e financeiros.
-                <br>Além disso, é um polo tecnológico com diversas startups, centros de inovação e grandes empresas de
-                tecnologia.
+            <p>
+                A região Sudeste do Brasil é composta pelos estados de São Paulo, Rio de Janeiro, Minas Gerais e Espírito Santo. É a mais industrializada e economicamente desenvolvida do país, abrigando importantes centros urbanos, culturais e financeiros. E é considerada uma das mais desenvolvidas tecnologicamente do Brasil, juntamente com a região Sul. Segundo o Ranking Connected Smart Cities, 58 das 100 cidades mais inteligentes e conectadas do país estão localizadas na região Sudeste.
             </p>
-            <p>Também, é considerada um polo de inovação e conectividade, com 58 das 100 cidades mais inteligentes e
-                conectadas do país.
-                <br>O estado de São Paulo é considerado o estado com o maior potencial de inovação no Brasil, tanto no
-                ranking geral quanto nos indicadores específicos.
-                <br>Outras cidades da região que se destacam no desenvolvimento tecnológico e urbano são Niterói e
-                Barueri.
+            <p>
+                Além disso, é um polo tecnológico com diversas startups, centros de inovação e grandes empresas de tecnologia. A região Sudeste também é a mais rica do Brasil e possui a maior concentração populacional do país. A industrialização do país teve início na região Sudeste, e o estado de São Paulo é o principal centro industrial do Brasil.
+            </p>
+            <p>
+                Alguns dos ramos industriais mais importantes da região Sudeste são: Automobilística, Siderúrgica, Petroquímica, Naval, Petrolífera. Concentram-se 70% das despesas com desenvolvimento de tecnologias realizadas pelas empresas brasileiras. Somando-se as regiões Sudeste e Sul, esse percentual eleva-se para 90% (Braga e Matesco, 1986).
+            </p>                
+            <p>
+                Clique nos links abaixo para descobrir mais sobre os estados da região Sudeste.
             </p>
         </section>
 
-        <section class="section2">
-            <div id="card1">
-                <h2><a href="./em-construcao.html">Minas Gerais</a></h2>
-            </div>
-            <div id="card2">
-                <h2><a href="./estado.html">Rio de Janeiro</a></h2>
-            </div>
-            <div id="card3">
-                <h2><a href="./em-construcao.html">São Paulo</a></h2>
-            </div>
-            <div id="card4">
-                <h2><a href="./em-construcao.html">Espírito Santo</a></h2>
-            </div>
+        <section class="estados-sudeste">
+            <a href="./em-construcao.html">
+                <h2>Minas Gerais</h2>
+            </a>
+            <a href="./estado.html">
+                <h2>Rio de Janeiro</h2>
+            </a>
+            <a href="./em-construcao.html">
+                <h2>São Paulo</h2>
+            </a>
+            <a href="./em-construcao.html">
+                <h2>Espírito Santo</h2>
+            </a>
         </section>
     </main>
     <img src="./assets/images/barra-colorida.svg" alt="Separador" class="separador">
@@ -65,6 +72,7 @@
         <p>&copy; 2024 14Bits. Todos os direitos reservados</p>
     </footer>
 
+    <script src="./js/navbar.js" defer></script>
     <script src="./js/regiao.js" defer></script>
 </body>
 

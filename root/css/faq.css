@@ -8,6 +8,8 @@
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--verde-escuro);
     background-color: var(--verde-escuro);
 }
 
@@ -23,171 +25,76 @@ body {
   }
 
 /*-----------------------------------------------------------------------------------*/
-/* Header */
-header {
-    background-color: var(--verde-escuro);
-    text-align: center;
-}
-
-/* Menu de navegação */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 10%;
-    background-color: var(--verde-escuro);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-}
-
-    img {
-        height: 50px;
-    }
-
-nav a {
-    padding: 20px;
-    color: var(--branco);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    transition: all 0.5s ease;
-  }
-
-nav a:hover {
-    background-color: var(--turquesa);
-    color: var(--amarelo);
-  }
-
-  .disabled-link{
-    color: gray;
-    text-decoration: none;
-  }
-
-/* Media query NAV */
-@media (max-width: 1400px) {
-    nav {
-      justify-content: center;
-      padding: 30px 0;
-      gap: 20px;
-      
-      a {
-        font-size: 16px;
-        padding: 10px;
-      }
-      img {
-        height: 30px;
-      }
-
-    }
-}
-
-@media (max-width: 1050px) {
-    nav {
-        justify-content: center;
-        padding: 15px 0;
-        gap: 10px;
-    }
-
-    nav a {
-        font-size: 16px;
-        padding: 10px;
-    }
-
-    nav img {
-        height: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    nav {
-      flex-direction: column;
-      padding: 10px 5px;
-      gap: 0;
-  
-      a {
-        font-size: 16px;
-        padding: 10px;
-      }
-
-      img {
-        height: 20px;
-      }
-
-    }
-}
-
-/*-------------------------------------------------------*/
 
 /*Seção do site*/
 main{
     height:max-content;
     position: relative;
-    margin-bottom: 5%;
+    margin-bottom: 35px;
+    width: 100%;
+    padding: 0 45px;
 }
 
-#titulo{
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+#titulo {
+    text-align: center;
+    margin-bottom: 20px;
     color: var(--amarelo);
     font-family: 'Montserrat', 'Roboto', sans-serif;
     font-size: 40px;
-
 }
 
-#subtitulo{
+#subtitulo {
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    text-align: justify;
+    font-size: 18px;
     color:var(--branco);
 }
 
-.conteudo details summary{
-    margin-bottom: 10px;
+section.conteudo {
+    margin: 50px auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 30px;
     cursor: pointer;
-   
+    width: 100%;
+    row-gap: 15px;
 }
 
+details {
+    width: 100%;
+}
 
+#perguntas,
+#respostas {
+    max-width: 80%;
+    margin: 0 auto;
+}
 
-#perguntas{
-    color: var(--verde-escuro);
-    height: 60px;
+#perguntas {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 60px;
+    padding: 10px;
     background-color: whitesmoke;
-    margin-left: 250px;
-    margin-right: 250px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    border-radius: 10px;
     font-family: 'Montserrat', 'Roboto', sans-serif;
-    
+    font-weight: 500;
 }
 
-#respostas{
-    font-family:'Roboto', sans-serif;
-    color: var(--azul-escuro);
-    background-color: rgba(248, 248, 248, 0.6);
-    font-size: 20px;
+#respostas {
+    margin: 15px auto;
+    padding: 30px 35px;
+    font-size: 18px;
     text-align: justify;
-    margin-left: 250px;
-    margin-right: 250px;
-    padding: 20px;
-    border-radius: 10px;
-    
+    line-height: 1.5;
+    background-color: rgba(248, 248, 248, 0.6);
 }
 
 footer {
@@ -198,35 +105,25 @@ footer {
     text-align: center;
     background-color: var(--verde-escuro);
     color: var(--branco);
-    font-family: 'Roboto', sans-serif;
     font-size: 18px;
   }
 
-/* MediaS query para telas menores */
+/* Media query para telas menores */
 
 /*-------- PRIMEIRO TAMANHO DE TELA-----------*/
 
 @media (max-width: 1400px) {
-   
     #titulo {
-        font-size: 30px;
+        font-size: 32px;
     }
     #subtitulo {
-        font-size: 15px;
+        font-size: 18px;
     }
     #perguntas {
-        text-align: center;
-        font-size: 20px;
-        margin-left: 300px;
-        margin-right: 300px;
-        height: 70px;
+        font-size: 22px;
     }
     #respostas {
-        font-size: 15px;
-        margin-left: 300px;
-        margin-right: 300px;
-      
-
+        font-size: 18px;
     }
 
 }
@@ -236,83 +133,36 @@ footer {
 @media (max-width: 1050px) {
 
     #titulo {
-        font-size: 25px;
+        font-size: 26px;
     }
-    #subtitulo {
-        font-size: 12px;
-    }
-    #perguntas {
-        text-align: center;
-        font-size: 15px;
-        margin-left: 150px;
-        margin-right: 150px;
-        height: 40px;
+    #perguntas{
+        font-size: 20px;
     }
     #respostas {
-        font-size: 12px;
-        margin-left: 150px;
-        margin-right: 150px;
-       
+        font-size: 18px;
     }
-    footer {
-    font-size: 12px;
-  }
-
 }
 
 /*-------- TERCEIRO TAMANHO DE TELA-----------*/
 
 @media (max-width: 768px) {
-
     #titulo {
-        font-size: 25px;
+        margin-top: 30px;
     }
-    #subtitulo {
-        font-size: 12px;
-    }
-    #perguntas {
-        text-align: center;
-        font-size: 15px;
-        margin-left: 150px;
-        margin-right: 150px;
-        height: 50px;
-        
-    }
+    #perguntas,
     #respostas {
-        font-size: 12px;
-        margin-left: 150px;
-        margin-right: 150px;
-       
+        max-width: 100%;
     }
-
 }
 
 /*-------- QUARTO TAMANHO DE TELA-----------*/
 
-@media (max-width: 600px) {
 
+@media (max-width: 576px) {
     #titulo {
         font-size: 20px;
     }
-    #subtitulo {
-        font-size: 12px;
-    }
-    #perguntas {
-        text-align: center;
-        font-size: 12px;
-        margin-left: 50px;
-        margin-right: 50px;
-        height: 50px;
-    }
-    #respostas {
-        font-size: 10px;
-        margin-left: 50px;
-        margin-right: 50px;
-       
-    }
     footer {
-        font-size: 8px;
-      }
-
+        font-size: 16px;
+    }
 }
-

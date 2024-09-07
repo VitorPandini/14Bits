@@ -21,28 +21,3 @@ document.addEventListener('DOMContentLoaded', () => {
       img.style.filter = 'none';
   });
 });
-
-document.addEventListener('DOMContentLoaded', function(){
-
-    // Seleciona todos os links dentro da <section>
-    const elementoDivA = document.querySelectorAll("section a");
-    
-    // Aplica os estilos sobre todos os links
-    elementoDivA.forEach(elementoDivA => {
-        elementoDivA.style.textDecoration = 'none';
-        elementoDivA.style.fontWeight = 'bold';
-
-    })
-});
-
-// Adiciona o efeito no menu nav cor ao passar o mouser
-const navLinks = document.querySelectorAll('nav a');
-navLinks.forEach(link => {
-  link.addEventListener('mouseover', () => {
-    link.style.color = '#FFD23F'; // var(--amarelo)
-  });
-  link.addEventListener('mouseout', () => {
-    link.style.color = ''; // Voltar à cor original
-  });
-});
-

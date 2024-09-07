@@ -9,9 +9,11 @@
     <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon">
     
     <!-- Inserir CSS aqui -->
+    <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="css/sobre.css">
 
     <!-- Inserir JS aqui-->
+    <script src="./js/navbar.js" defer></script>
     <script src="./js/sobre.js" defer></script>
 
     <!-- Inserir Fontes aqui -->
@@ -23,22 +25,28 @@
 </head>
     
 <body>
+    
     <header>
-        
         <!-- Menu de navegação -->
         <nav>
-            <a href="./em-construcao.html" class="disabled-link">Norte</a>
-            <a href="./em-construcao.html" class="disabled-link">Nordeste</a>
-            <a href="./em-construcao.html" class="disabled-link" >Centro-Oeste</a>
-            <a href="./index.html"><img src="assets/images/14bits-nav-home.svg" alt="14-Bits"></a>
-            <a href="./regiao.html">Sudeste</a>
-            <a href="./em-construcao.html" class="disabled-link">Sul</a>
-            <a href="./sobre.html">Sobre</a>
-            <a href="./faq.html">FAQ</a>
-          </nav>
-        
-    </header>
-    
+            <a href="./index.html" class="show-mobile"><img src="assets/images/14bits-nav-home.svg" alt="14-Bits"></a>
+
+            <!-- Contêiner de links de navegação -->
+            <div id="nav-links">
+                <a href="./em-construcao.html" class="disabled-link">Norte</a>
+                <a href="./em-construcao.html" class="disabled-link">Nordeste</a>
+                <a href="./em-construcao.html" class="disabled-link" >Centro-Oeste</a>
+                <a href="./index.html" id="logo"><img src="assets/images/14bits-nav-home.svg" alt="14-Bits"></a>
+                <a href="./regiao.html">Sudeste</a>
+                <a href="./em-construcao.html" class="disabled-link">Sul</a>
+                <a href="./sobre.html">Sobre</a>
+                <a href="./faq.html">FAQ</a>
+            </div>
+
+            <!-- Botão de hambúrguer -->
+            <button id="hamburger-btn" aria-label="Alterna navegação">&#9776;</button>
+        </nav>
+      </header>
     <main>
 
         <!-- Explanação sobre o site e o projeto -->

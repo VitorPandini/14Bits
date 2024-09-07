@@ -26,53 +26,6 @@ body {
   color: var(--verde-escuro);
 }
 
-/* Header/Cabeçalho */
-header {
-  background-color: var(--verde-escuro);
-  text-align: center;
-}
-
-/* Navbar/Menu de navegação */
-#nav-links {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 0;
-  margin: 0 auto;
-  max-width: 1225px;
-
-  img {
-    height: 50px;
-  }
-
-  a {
-    padding: 20px;
-    color: var(--branco);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    transition: all 0.5s ease;
-  }
-  
-  a:hover {
-    background-color: var(--turquesa);
-    color: var(--amarelo);
-  }
-}
-
-.disabled-link{
-  color: gray;
-  text-decoration: none;
-}
 /* Wrapper principal */
 main {
   padding: 40px 0;
@@ -84,8 +37,9 @@ section {
   flex-direction: row;
   gap: 70px;
   justify-content: center;
+  max-width: 1200px;
   padding-top: 40px;
-  margin-bottom: 60px;
+  margin: 0 auto 60px;
 
   /* Coluna esquerda */
   > div {
@@ -104,6 +58,7 @@ section {
 
     article {
       align-content: center;
+      height: 100%;
       background-color: var(--azul);
       padding: 20px;
       cursor: pointer;
@@ -198,15 +153,6 @@ footer {
 
 /* XXL breakpoint */
 @media (max-width: 1400px) {
-  nav {
-    justify-content: center;
-    padding: 30px 0;
-
-    img {
-      height: 20px;
-    }
-  }
-
   section {
     gap: 45px;
   }
@@ -214,11 +160,6 @@ footer {
 
 /* Large breakpoints */
 @media (max-width: 992px) {
-  nav a {
-    font-size: 16px;
-    padding: 15px;
-  }
-
   main {
     display: flex;
     flex-direction: column;
@@ -248,16 +189,6 @@ footer {
 
 /* Medium breakpoint */
 @media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    padding: 30px 5px;
-
-    a {
-      font-size: 16px;
-      padding: 10px;
-    }
-  }
-
   h1 { 
     font-size: 28px;
   }

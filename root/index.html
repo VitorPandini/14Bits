@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon">
     <title>Principal | 14Bits</title>
@@ -11,27 +12,34 @@
     <header>
       <!-- Menu de navegação -->
       <nav>
-        <a href="./em-construcao.html" class="disabled-link">Norte</a>
-        <a href="./em-construcao.html" class="disabled-link">Nordeste</a>
-        <a href="./em-construcao.html" class="disabled-link" >Centro-Oeste</a>
-        <a href="./index.html"><img src="assets/images/14bits-nav-home.svg" alt="14-Bits"></a>
-        <a href="./regiao.html">Sudeste</a>
-        <a href="./em-construcao.html" class="disabled-link">Sul</a>
-        <a href="./sobre.html">Sobre</a>
-        <a href="./faq.html">FAQ</a>
+        <a href="./index.html" class="show-mobile"><img src="assets/images/14bits-nav-home.svg" alt="14-Bits"></a>
+  
+        <!-- Contêiner de links de navegação -->
+        <div id="nav-links">
+          <a href="./em-construcao.html" class="disabled-link">Norte</a>
+          <a href="./em-construcao.html" class="disabled-link">Nordeste</a>
+          <a href="./em-construcao.html" class="disabled-link" >Centro-Oeste</a>
+          <a href="./index.html" id="logo"><img src="assets/images/14bits-nav-home.svg" alt="14-Bits"></a>
+          <a href="./regiao.html">Sudeste</a>
+          <a href="./em-construcao.html" class="disabled-link">Sul</a>
+          <a href="./sobre.html">Sobre</a>
+          <a href="./faq.html">FAQ</a>
+        </div>
+        
+        <!-- Botão de hambúrguer -->
+        <button id="hamburger-btn" aria-label="Alterna navegação">&#9776;</button>
       </nav>
     </header>
+    
     <!-- LETREIRO INFORMATIVO  -->
-    <div>
-      <marquee behavior="scroll" direction="left" id="letreiro" scrollamount = 15>REGIÕES EM CONSTRUÇÃO, EXCETO SUDESTE! O SITE AINDA ESTÁ EM DESENVOLVIMENTO, NOS DESCULPEM :(</marquee>
-    </div>
+    <marquee behavior="scroll" direction="left" id="letreiro" scrollamount = 15>REGIÕES EM CONSTRUÇÃO, EXCETO SUDESTE! O SITE AINDA ESTÁ EM DESENVOLVIMENTO, NOS DESCULPEM :(</marquee>
 
     <main>
+
       <section>
         <article>
           <figure>
             <img id="mapa-brasil" src="./assets/images/brazil-map.svg" alt="Imagem do mapa do Brasil" viewBox="0 0 100 100">
-
 
             <div id="modal" class="tooltip modal">
               <div class="modal-content">
@@ -40,7 +48,6 @@
                 <p>Nessa Região contamos com grandes mudanças, onde diversas pessoas relevantes saíram dela.</p>
               </div>
             </div>
-            
           </figure>
         </article>
       </section>
@@ -48,22 +55,23 @@
       <aside>
         <figure>
           <a href="./em-construcao.html">
-            <img src="./assets/images/facebook.png" alt="Nosso Facebook" />
+            <img src="./assets/images/facebook.png" alt="Nosso Facebook">
           </a>
         </figure>
         <figure>
           <a href="./em-construcao.html">
-            <img src="./assets/images/instagram.png" alt="Nosso Instagram" />
+            <img src="./assets/images/instagram.png" alt="Nosso Instagram">
           </a>
         </figure>
       </aside>
-   
+
     </main>
 
     <footer>
       <p>&copy; 2024 14Bits. Todos os direitos reservados</p>
     </footer>
 
+    <script src="./js/navbar.js" defer></script>
     <script src="./js/index.js" defer></script>
   </body>
 </html>
